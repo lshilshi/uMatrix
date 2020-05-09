@@ -32,8 +32,8 @@ referrer-spoof: image.baidu.com false
 #Global Whitlist public CDN library
 Globally whitelist SourceForge Platform
 	* a.fsdn.com
-        * a.fsdn.com *
-        * a.fsdn.com script
+        _ a.fsdn.com *
+        _ a.fsdn.com script
         
 Globally whitelist Microsoft Ajax CDN
 	* ajax.aspnetcdn.com
@@ -52,13 +52,13 @@ Globally whitelist Google Hosted Libraries
 
 !Globally whitelist Akamaihd CDN
 !	* akamaihd.net
-!		* akamaihd.net *
-!		* akamaihd.net script
+!		_ akamaihd.net *
+!		_ akamaihd.net script
 		
 Globally whitelist Baidu Developer Center
 	* apps.bdimg.com
-		* apps.bdimg.com *
-		* apps.bdimg.com script
+		_ apps.bdimg.com *
+		_ apps.bdimg.com script
 
 Globally whitelist BootCDN
 	* cdn.bootcss.com
@@ -77,9 +77,9 @@ Globally whitelist Staticfile CDN
 
 Globally whitelist Amazon CloudFront CDN
 	* cloudfront.net
-		* cloudfront.net *
-		* cloudfront.net media
-		* cloudfront.net script
+		_ cloudfront.net *
+		_ cloudfront.net media
+		_ cloudfront.net script
 
 Globally whitelist jQuery CDN		
 	* code.jquery.com
@@ -93,23 +93,21 @@ Globally whitelist Bootstrap CDN
 		
 Globally whitelist Amazon Simple Storage Service
 	* s3.amazonaws.com
-		* s3.amazonaws.com *
-		* s3.amazonaws.com media
-		* s3.amazonaws.com script
+		_ s3.amazonaws.com *
+		_ s3.amazonaws.com media
+		_ s3.amazonaws.com script
 
 Globally whitelist UNPKG CDN		
 	* unpkg.com
-		* unpkg.com *
-		* unpkg.com script
+		_ unpkg.com *
+		_ unpkg.com script
 		
 Globally whitelist Google Services
 	* apis.google.com
-	* googleapis.com
-		* apis.google.com *
-		* apis.google.com script
-		* googleapis.com *
-		* googleusercontent.com *
-		* googleusercontent.com frame
+		_ apis.google.com *
+		_ apis.google.com script
+		_ googleusercontent.com *
+		_ googleusercontent.com frame
 
 Global GeeTest Captcha
 	* geetest.com		
@@ -123,9 +121,6 @@ Global Tencent Captcha
 		
 Global NetEase Captcha
 	* acstatic-dun.126.net
-	* dun.163.com
-	* dun.163yun.com
-	* cstaticdun.126.net
 		_ acstatic-dun.126.net *
 		_ acstatic-dun.126.net script
 		_ c.dun.163.com *
@@ -244,30 +239,39 @@ Baidu
 		referrer-spoof: image.baidu.com false
 		_ passport.bdimg.com script
 		baike.baidu.com bkssl.bdimg.com script
-		map.baidu.com mapor0.bdimg.com script
-		map.baidu.com webmap0.bdimg.com script
-		map.baidu.com webmap1.bdimg.com script
-		map.baidu.com maponline0.bdimg.com script
-		map.baidu.com maponline0.bdimg.com xhr
-		map.baidu.com maponline1.bdimg.com xhr
-		map.baidu.com maponline2.bdimg.com xhr
-		map.baidu.com maponline3.bdimg.com xhr
 		music.baidu.com mu5.bdstatic.com script
 		music.baidu.com mu6.bdstatic.com script
 		music.baidu.com mu7.bdstatic.com script
 		news.baidu.com gss0.bdstatic.com script
-		pan.baidu.com baidupcs.com frame
-		pan.baidu.com ss0.bdstatic.com script
 		tieba.baidu.com tb1.bdstatic.com media
 		tieba.baidu.com tb1.bdstatic.com script
 		v.baidu.com vs5.bdstatic.com script
 		v.baidu.com vs6.bdstatic.com script
 		zhidao.baidu.com iknowpc.bdimg.com script
-		wenku.baidu.com wkbos.bdimg.com script
-		wenku.baidu.com wkstatic.bdimg.com script
-		wenku.baidu.com edu-wenku.bdimg.com script
-		wenku.baidu.com wkbjcloudbos.bdimg.com script
-		wenku.baidu.com wkretype.bdimg.com script
+				
+Baidu Map
+	map.baidu.com *
+		_ mapor0.bdimg.com script
+		_ webmap0.bdimg.com script
+		_ webmap1.bdimg.com script
+		_ maponline0.bdimg.com script
+		_ maponline0.bdimg.com xhr
+		_ maponline1.bdimg.com xhr
+		_ maponline2.bdimg.com xhr
+		_ maponline3.bdimg.com xhr
+		
+Baidu Yun
+	pan.baidu.com *
+		_ baidupcs.com frame
+		_ ss0.bdstatic.com script
+
+Baidu Wenku
+	wenku.baidu.com *
+		_ wkbos.bdimg.com script
+		_ wkstatic.bdimg.com script
+		_ edu-wenku.bdimg.com script
+		_ wkbjcloudbos.bdimg.com script
+		_ wkretype.bdimg.com script
 
 Hupu
 	bbs.hupu.com *
@@ -371,9 +375,6 @@ Font Awesome
 
 Google
 	google.com *
-
-		drive.google.com content.googleapis.com frame
-		drive.google.com content.googleapis.com script
 		_ ssl.gstatic.com media
 		_ ssl.gstatic.com script
 		_ ssl.gstatic.com xhr
@@ -497,7 +498,9 @@ Microsoft
 		microsoftonline.com secure.aadcdn.microsoftonline-p.com script
 		microsoftonline.com www.office.com frame
 		microsoftonline.com www.office.com script
-		! office.com
+
+Microsoft Office
+	office.com *
 		office.com browser.pipe.aria.microsoft.com xhr
 		office.com easofficehome.msocdn.com script
 		office.com graph.microsoft.com xhr
@@ -630,9 +633,8 @@ virustotal
 	virustotal.com *
 		_ virustotalcloud.appspot.com script
 
-Weibo
+Weibo.com
 	weibo.com *
-	weibo.cn *
 		_ h5.sinaimg.cn script
 		_ js.t.sinajs.cn script
 		_ js1.t.sinajs.cn script
@@ -644,6 +646,19 @@ Weibo
 		_ f.video.weibocdn.com media
 		_ f.video.weibocdn.com xhr
 
+Weibo.cn
+	weibo.cn *
+		_ h5.sinaimg.cn script
+		_ js.t.sinajs.cn script
+		_ js1.t.sinajs.cn script
+		_ js2.t.sinajs.cn script
+		_ jss.t.sinajs.cn script
+		_ login.sina.com.cn script
+		_ sinaimg.cn media
+		_ tjs.sjs.sinajs.cn script
+		_ f.video.weibocdn.com media
+		_ f.video.weibocdn.com xhr
+		
 Wikia
 	wikia.com *
 		_ slot1-images.wikia.nocookie.net script
@@ -720,6 +735,7 @@ Github
 		_ raw.githubusercontent.com xhr
 		_ pages-themes.github.io frame
 		_ pages-themes.github.io script
+		_ github.githubassets.com script
 		! Required for raw/diff view of some files (e.g. pictures, pdf, svg)
 		_ s3.amazonaws.com xhr
 		_ render.githubusercontent.com frame
@@ -749,7 +765,6 @@ Google Maps
 
 Google reCaptcha
 	* www.google.com
-	* www.google.cn
 		_ www.google.com *
 		_ www.google.com script
 		_ www.google.com frame
@@ -762,7 +777,26 @@ Google reCaptcha
 		_ recaptcha.net xhr
 		_ www.gstatic.cn *
 		_ www.gstatic.cn script
-		
+
+Google reCaptcha CN
+	* www.google.cn
+		_ www.google.cn *
+		_ www.google.cn script
+		_ www.google.cn frame
+		_ www.google.cn xhr
+		_ www.google.com *
+		_ www.google.com script
+		_ www.google.com frame
+		_ www.google.com xhr
+		_ www.gstatic.com *
+		_ www.gstatic.com script
+		_ recaptcha.net *
+		_ recaptcha.net script
+		_ recaptcha.net frame
+		_ recaptcha.net xhr
+		_ www.gstatic.cn *
+		_ www.gstatic.cn script
+				
 MEGA
 	mega.nz *
 		_ 1st-party script
