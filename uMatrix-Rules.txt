@@ -641,7 +641,6 @@ Weibo.com
 		_ js2.t.sinajs.cn script
 		_ jss.t.sinajs.cn script
 		_ login.sina.com.cn script
-		_ sinaimg.cn media
 		_ tjs.sjs.sinajs.cn script
 		_ f.video.weibocdn.com media
 		_ f.video.weibocdn.com xhr
@@ -654,7 +653,6 @@ Weibo.cn
 		_ js2.t.sinajs.cn script
 		_ jss.t.sinajs.cn script
 		_ login.sina.com.cn script
-		_ sinaimg.cn media
 		_ tjs.sjs.sinajs.cn script
 		_ f.video.weibocdn.com media
 		_ f.video.weibocdn.com xhr
