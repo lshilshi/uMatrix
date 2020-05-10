@@ -852,3 +852,20 @@ Youtube with account
 		accounts.google.com 1st-party cookie
 		accounts.google.com gstatic.com *
 		accounts.google.com gstatic.com script
+		
+ZWDT as 3rd Party
+	* zwdt.sh.gov.cn
+		_ zwdt.sh.gov.cn *
+		_ zwdt.sh.gov.cn frame
+		_ zwdt.sh.gov.cn script
+		_ zwdt.sh.gov.cn xhr
+		_ zwdtuser.sh.gov.cn *
+		_ zwdtuser.sh.gov.cn cookie
+		_ zwdtuser.sh.gov.cn frame
+		_ zwdtuser.sh.gov.cn script
+
+Eshimin as 3rd Party
+	* api.eshimin.com
+		_ api.eshimin.com *
+		_ api.eshimin.com frame
+		_ api.eshimin.com script
