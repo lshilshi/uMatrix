@@ -395,7 +395,7 @@ Font Awesome
 		_ intercom.io script
 
 Google
-	google.com *
+	google.* *
 		_ ssl.gstatic.com media
 		_ ssl.gstatic.com script
 		_ ssl.gstatic.com xhr
@@ -768,7 +768,7 @@ Gitlab
 		_ gitlab-static.net script
 
 Google Maps
-	google.* *
+	www.google.* *
 		_ 1st-party script
 		_ kh.google.com xhr
 		_ gstatic.com *
