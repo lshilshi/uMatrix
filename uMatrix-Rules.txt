@@ -238,16 +238,38 @@ Baidu
 	baidu.com *
 		referrer-spoof: image.baidu.com false
 		_ passport.bdimg.com script
-		baike.baidu.com bkssl.bdimg.com script
-		music.baidu.com mu5.bdstatic.com script
-		music.baidu.com mu6.bdstatic.com script
-		music.baidu.com mu7.bdstatic.com script
-		news.baidu.com gss0.bdstatic.com script
-		tieba.baidu.com tb1.bdstatic.com media
-		tieba.baidu.com tb1.bdstatic.com script
-		v.baidu.com vs5.bdstatic.com script
-		v.baidu.com vs6.bdstatic.com script
-		zhidao.baidu.com iknowpc.bdimg.com script
+		_ ss1.bdstatic.com script
+		_ ss0.bdstatic.com script
+
+Baidu Baike
+	baike.baidu.com *
+		_ bkssl.bdimg.com script
+		
+Baidu Music
+	music.baidu.com *
+		_ mu5.bdstatic.com script
+		_ mu6.bdstatic.com script
+		_ mu7.bdstatic.com script
+
+Baidu Tieba
+	tieba.baidu.com *
+		_ tb1.bdstatic.com media
+		_ tb1.bdstatic.com script
+
+Baidu Video
+	v.baidu.com *		
+		_ vs5.bdstatic.com script
+		_ vs6.bdstatic.com script
+		
+Baidu Zhidao
+	zhidao.baidu.com *				
+		_ iknowpc.bdimg.com script
+
+Baidu Exp
+	jingyan.baidu.com *
+		_ exp.bdstatic.com script
+		_ ksv-video-publish.cdn.bcebos.com media
+		_ ksv-video-publish.cdn.bcebos.com xhr
 				
 Baidu Map
 	map.baidu.com *
@@ -263,7 +285,6 @@ Baidu Map
 Baidu Yun
 	pan.baidu.com *
 		_ baidupcs.com frame
-		_ ss0.bdstatic.com script
 
 Baidu Wenku
 	wenku.baidu.com *
@@ -672,7 +693,7 @@ Wikipedia
 		_ upload.wikimedia.org media
 
 WikiWand
-	wikiwand.com ^
+	wikiwand.com *
 		_ db0nus869y26v.cloudfront.net xhr
 		_ wikipedia.org script
 		_ s3.amazonaws.com xhr
@@ -745,12 +766,6 @@ Gitlab
 		_ 1st-party script
 		_ gitlab-static.net *
 		_ gitlab-static.net script
-
-Google account sign in
-	accounts.google.com *
-		_ 1st-party script
-		_ gstatic.com *
-		_ gstatic.com script
 
 Google Maps
 	google.* *
@@ -846,10 +861,13 @@ Youtube with account
 		_ ytimg.com *
 		_ ytimg.com script
 		_ google.com cookie
-		accounts.google.com 1st-party *
-		accounts.google.com 1st-party cookie
-		accounts.google.com gstatic.com *
-		accounts.google.com gstatic.com script
+		
+Google account sign in
+	accounts.google.com *
+		_ 1st-party *
+		_ 1st-party cookie
+		_ gstatic.com *
+		_ gstatic.com script
 		
 ZWDT as 3rd Party
 	* zwdt.sh.gov.cn
