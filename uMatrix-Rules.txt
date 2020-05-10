@@ -120,7 +120,7 @@ Global Tencent Captcha
 		_ captcha.gtimg.com script
 		
 Global NetEase Captcha
-	* acstatic-dun.126.net
+	* cstaticdun.126.net
 		_ acstatic-dun.126.net *
 		_ acstatic-dun.126.net script
 		_ c.dun.163.com *
