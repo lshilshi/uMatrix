@@ -623,6 +623,7 @@ Sohu
 	sohu.com *
 		_ m1.auto.itc.cn script
 		_ statics.itc.cn script
+		_ cdn.sohucs.com script
 
 speedtest
 	speedtest.net *
