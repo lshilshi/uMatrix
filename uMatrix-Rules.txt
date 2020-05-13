@@ -152,14 +152,17 @@ Whitelist Tencent Captcha
 		_ captcha.gtimg.com script
 		
 Whitelist NetEase Captcha
-	* *dun.126.net
+	* acstatic-dun.126.net
 		_ acstatic-dun.126.net script
-		_ cstaticdun.126.net script
-		_ c.dun.163.com script
-		_ c.dun.163yun.com script
 		_ ac.dun.163yun.com script allow
 		_ ac.dun.163yun.com xhr allow
 
+Whitelist NetEase Captcha v2
+	* cstaticdun.126.net
+		_ cstaticdun.126.net script
+		_ c.dun.163.com script
+		_ c.dun.163yun.com script
+		
 ! Whitlist 3rd Services
 Whitlist Alicdn(3rd)
 	* alicdn.com
@@ -252,6 +255,9 @@ NetEase
 NetEase Music
 	music.163.com *
 		_ s3.music.126.net script
+		_ music.126.net media allow
+		_ music.126.net xhr allow
+		_ sdk1xyajs-data.xycdn.com xhr allow
 
 Alipay
 	alipay.com *
