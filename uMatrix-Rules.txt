@@ -111,6 +111,14 @@ Whitelist Google Services
 		_ googleusercontent.com *
 		_ googleusercontent.com frame
 
+Whitelist Cat Networks
+	* cdnjs.cat.net
+		_ cdnjs.cat.net script
+		
+Whitelist Simple Images Hosting
+	* cdnjs.loli.net
+		_ cdnjs.loli.net script
+
 ! Whitlist Captcha Services
 Whitlist Google reCaptcha
 	* www.google.com
