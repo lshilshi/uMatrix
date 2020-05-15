@@ -1,4 +1,4 @@
-! uMatrix: Ruleset recipes 2.0
+! uMatrix: Ruleset recipes 1.0
 ! Title: uMatrix Rulesets
 ! Maintainer: CanYang
 
@@ -8,7 +8,6 @@ matrix-off: about-scheme true
 matrix-off: behind-the-scene true
 matrix-off: chrome-extension-scheme true
 matrix-off: chrome-scheme true
-matrix-off: localhost true
 matrix-off: moz-extension-scheme true
 matrix-off: opera-scheme true
 matrix-off: vivaldi-scheme true
@@ -251,6 +250,7 @@ NetEase
 		_ static.ws.126.net script
 		_ ursdoccdn.nosdn.127.net script
 		_ wr.da.netease.com script
+		_ flv.bn.netease.com media
 		
 NetEase Music
 	music.163.com *
@@ -366,6 +366,7 @@ Bilibili
 		_ s3.hdslb.com script
 		_ static.hdslb.com media
 		_ static.hdslb.com script
+		_ bilivideo.com xhr
 
 JD
 	jd.com *
