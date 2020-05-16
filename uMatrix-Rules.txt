@@ -379,6 +379,7 @@ Bilibili
 		_ s3.hdslb.com script
 		_ static.hdslb.com media
 		_ static.hdslb.com script
+		_ bilivideo.com media
 		_ bilivideo.com xhr
 		
 CSDN Blog
@@ -417,6 +418,13 @@ Mozilla Addons
 	addons.mozilla.org *
 		_ 1st-party script		
 		_ addons-amo.cdn.mozilla.net script
+
+Sina Video
+	video.sina.com.cn *
+		_ i3.sinaimg.cn script
+		_ n.sinaimg.cn script
+		_ sax.sina.com.cn script
+		_ sjs2.sinajs.cn script
 
 Weibo.com
 	weibo.com *
