@@ -161,8 +161,8 @@ Whitelist Tencent Captcha
 Whitelist NetEase Captcha
 	* acstatic-dun.126.net
 		_ acstatic-dun.126.net script
-		_ ac.dun.163yun.com script allow
-		_ ac.dun.163yun.com xhr allow
+		_ ac.dun.163yun.com script
+		_ ac.dun.163yun.com xhr
 
 Whitelist NetEase Captcha v2
 	* cstaticdun.126.net
@@ -263,9 +263,9 @@ NetEase
 NetEase Music
 	music.163.com *
 		_ s3.music.126.net script
-		_ music.126.net media allow
-		_ music.126.net xhr allow
-		_ sdk1xyajs-data.xycdn.com xhr allow
+		_ music.126.net media
+		_ music.126.net xhr
+		_ sdk1xyajs-data.xycdn.com xhr
 
 Alipay
 	alipay.com *
@@ -315,6 +315,10 @@ Baidu Music
 		_ mu6.bdstatic.com script
 		_ mu7.bdstatic.com script
 
+Baidu Trans
+	fanyi.baidu.com *
+		_ fanyi-cdn.cdn.bcebos.com script
+
 Baidu Tieba
 	tieba.baidu.com *
 		_ tb1.bdstatic.com media
@@ -348,6 +352,7 @@ Baidu Map
 Baidu Yun
 	pan.baidu.com *
 		_ baidupcs.com frame
+		_ code.bdstatic.com script
 
 Baidu Wenku
 	wenku.baidu.com *
@@ -375,6 +380,11 @@ Bilibili
 		_ static.hdslb.com media
 		_ static.hdslb.com script
 		_ bilivideo.com xhr
+		
+CSDN Blog
+	blog.csdn.net *
+		_ csdnimg.cn script
+		_ g.csdnimg.cn script block
 
 JD
 	jd.com *
