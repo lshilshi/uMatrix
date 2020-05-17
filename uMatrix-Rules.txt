@@ -31,84 +31,68 @@ referrer-spoof: image.baidu.com false
 ! Global Whitlist public CDN library
 Globally whitelist Microsoft Ajax CDN
 	* ajax.aspnetcdn.com
-        * ajax.aspnetcdn.com *
         * ajax.aspnetcdn.com script
               
 Globally whitelist Cloudflare CDN
 	* cdnjs.cloudflare.com
-		* cdnjs.cloudflare.com *
 		* cdnjs.cloudflare.com script
 
 Globally whitelist Google Hosted Libraries
 	* ajax.googleapis.com
-		* ajax.googleapis.com *
 		* ajax.googleapis.com script
 		
 Globally whitelist BootCDN
 	* cdn.bootcss.com
-		* cdn.bootcss.com *
 		* cdn.bootcss.com script
 
 Globally whitelist jsDelivr CDN
 	* cdn.jsdelivr.net
-        * cdn.jsdelivr.net *
         * cdn.jsdelivr.net script
 
 Globally whitelist Staticfile CDN
 	* cdn.staticfile.org
-		* cdn.staticfile.org *
 		* cdn.staticfile.org script
 
 Globally whitelist Amazon CloudFront CDN
 	* cloudfront.net
-		* cloudfront.net *
 		* cloudfront.net media
 		* cloudfront.net script
 		* cloudfront.net xhr
 
 Globally whitelist jQuery CDN
 	* code.jquery.com
-		* code.jquery.com *
 		* code.jquery.com script
 
 Globally whitelist Bootstrap CDN
 	* maxcdn.bootstrapcdn.com
-		* maxcdn.bootstrapcdn.com *
 		* maxcdn.bootstrapcdn.com script
 
 ! Whitlist Less public CDN library	
 Whitelist Akamaihd CDN
 	* akamaihd.net
-		_ akamaihd.net *
 		_ akamaihd.net script
 		
 Whitelist Baidu Developer Center
 	* apps.bdimg.com
-		_ apps.bdimg.com *
 		_ apps.bdimg.com script
 		
 Whitelist Amazon Simple Storage Service
 	* s3.amazonaws.com
-		_ s3.amazonaws.com *
 		_ s3.amazonaws.com media
 		_ s3.amazonaws.com script
 		_ s3.amazonaws.com xhr
 
 Whitelist SourceForge Platform
 	* a.fsdn.com
-        _ a.fsdn.com *
         _ a.fsdn.com script
         
 Whitelist UNPKG CDN		
 	* unpkg.com
-		_ unpkg.com *
 		_ unpkg.com script
 		
 Whitelist Google Services
 	* apis.google.com
-		_ apis.google.com *
 		_ apis.google.com script
-		_ googleusercontent.com *
 		_ googleusercontent.com frame
 
 Whitelist Cat Networks
@@ -122,29 +106,23 @@ Whitelist Simple Images Hosting
 ! Whitlist Captcha Services
 Whitlist Google reCaptcha
 	* www.google.com
-		_ www.google.com *
 		_ www.google.com script
 		_ www.google.com frame
 		_ www.google.com xhr
-		_ www.gstatic.com *
 		_ www.gstatic.com script
 
 Whitlist Google reCaptcha CN
 	* www.google.cn
-		_ www.google.cn *
 		_ www.google.cn script
 		_ www.google.cn frame
 		_ www.google.cn xhr
-		_ www.gstatic.cn *
 		_ www.gstatic.cn script
 
 Whitlist reCaptcha
 	* recaptcha.net
-		_ recaptcha.net *
 		_ recaptcha.net script
 		_ recaptcha.net frame
 		_ recaptcha.net xhr
-		_ www.gstatic.com *
 		_ www.gstatic.com script
 			
 Whitelist GeeTest Captcha
@@ -196,18 +174,15 @@ Alipay as 3rd Party
 
 ZWDT as 3rd Party
 	* zwdt.sh.gov.cn
-		_ zwdt.sh.gov.cn *
 		_ zwdt.sh.gov.cn frame
 		_ zwdt.sh.gov.cn script
 		_ zwdt.sh.gov.cn xhr
-		_ zwdtuser.sh.gov.cn *
 		_ zwdtuser.sh.gov.cn cookie
 		_ zwdtuser.sh.gov.cn frame
 		_ zwdtuser.sh.gov.cn script
 
 Eshimin as 3rd Party
 	* api.eshimin.com
-		_ api.eshimin.com *
 		_ api.eshimin.com frame
 		_ api.eshimin.com script
 
@@ -231,12 +206,10 @@ MS Office as 3rd Party
 Google Maps as 3rd Party
 	*	www.google.*
 		_ kh.google.com xhr
-		_ maps.googleapis.com *
 		_ maps.googleapis.com script
 												
 Google Translation as 3rd Party
 	* translate.google.com
-		_ translate.google.com *
 		_ translate.googleapis.com script
 		_ translate.googleapis.com xhr
 		_ translate.googleusercontent.com frame
@@ -280,19 +253,24 @@ Alipay
 Taobao
 	taobao.com *
 		_ 1st-party script
+		_ tmall.com *
 		_ alibaba.com cookie
 		_ localhost.wwbizsrv.alibaba.com script
 
 Tmall
 	tmall.com *
 		_ 1st-party script
-		_ taobao.com * inherit
+		_ taobao.com *
+		_ alibaba.com cookie
+		_ localhost.wwbizsrv.alibaba.com script		
 
 Tmall HK
 	tmall.hk *
 		_ 1st-party script
-		_ taobao.com * inherit
-		_ tmall.com * inherit
+		_ taobao.com *
+		_ tmall.com *
+		_ alibaba.com cookie
+		_ localhost.wwbizsrv.alibaba.com script
 
 Baidu
 	baidu.com *
@@ -381,7 +359,15 @@ Bilibili
 		_ static.hdslb.com script
 		_ bilivideo.com media
 		_ bilivideo.com xhr
-		
+
+Douyin
+	iesdouyin.com *
+		_ aweme.snssdk.com media
+		_ aweme.snssdk.com xhr
+		_ ixigua.com media
+		_ s3.bytecdn.cn script
+		_ s3.pstatp.com script
+
 CSDN Blog
 	blog.csdn.net *
 		_ csdnimg.cn script
@@ -397,7 +383,10 @@ JD
 JD HK
 	jd.hk *
 		_ 1st-party script
-		_ jd.com * inherit
+		_ jd.com *
+		_ 3.cn script
+		_ misc.360buyimg.com script
+		_ static.360buyimg.com script
 
 Outlook(Formerly Hotmail)
 	live.com *
@@ -411,7 +400,6 @@ Microsoft
 	microsoft.com *
 		_ 1st-party script
 		_ i2-msdn.sec.s-msft.com script
-		_ login.live.com *
 		_ login.live.com frame
 
 Mozilla Addons
@@ -441,7 +429,15 @@ Weibo.com
 Weibo.cn
 	weibo.cn *
 		_ 1st-party script
-		_ weibo.com * inherit
+		_ weibo.com *
+		_ h5.sinaimg.cn script
+		_ js.t.sinajs.cn script
+		_ js1.t.sinajs.cn script
+		_ js2.t.sinajs.cn script
+		_ jss.t.sinajs.cn script
+		_ tjs.sjs.sinajs.cn script
+		_ f.video.weibocdn.com media
+		_ f.video.weibocdn.com xhr
 
 Youku
 	youku.com *
@@ -465,7 +461,6 @@ Github
 Gitlab
 	gitlab.com *
 		_ 1st-party script
-		_ gitlab-static.net *
 		_ gitlab-static.net script
 
 Dropbox
@@ -478,29 +473,24 @@ Dropbox
 MEGA
 	mega.nz *
 		_ 1st-party script
-		_ mega.co.nz *
 		_ mega.co.nz script
 		_ mega.co.nz xhr
 
 XDA-Developers
 	xda-developers.com *
 		_ 1st-party script
-		_ xda-cdn.com *
 		_ xda-cdn.com script
 
 Youtube no account
 	youtube.com *
 		_ 1st-party script
-		_ googlevideo.com *
-		_ ytimg.com *
+		_ googlevideo.com xhr
 		_ ytimg.com script
 
 Youtube with account
 	youtube.com *
 		_ 1st-party script
-		_ googlevideo.com *
 		_ googlevideo.com xhr
-		_ ytimg.com *
 		_ ytimg.com script
 		_ google.com cookie
 		
@@ -508,5 +498,4 @@ Google account sign in
 	accounts.google.com *
 		_ 1st-party *
 		_ 1st-party cookie
-		_ gstatic.com *
 		_ gstatic.com script
