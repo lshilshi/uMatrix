@@ -355,7 +355,6 @@ Bilibili
 		_ s1.hdslb.com script
 		_ s2.hdslb.com script
 		_ s3.hdslb.com script
-		_ static.hdslb.com media
 		_ static.hdslb.com script
 		_ bilivideo.com media
 		_ bilivideo.com xhr
@@ -425,6 +424,7 @@ Weibo.com
 		_ tjs.sjs.sinajs.cn script
 		_ f.video.weibocdn.com media
 		_ f.video.weibocdn.com xhr
+		_ miaopai.video.weibocdn.com media
 
 Weibo.cn
 	weibo.cn *
@@ -438,7 +438,8 @@ Weibo.cn
 		_ tjs.sjs.sinajs.cn script
 		_ f.video.weibocdn.com media
 		_ f.video.weibocdn.com xhr
-
+		_ miaopai.video.weibocdn.com media
+		
 Youku
 	youku.com *
 		_ * media
