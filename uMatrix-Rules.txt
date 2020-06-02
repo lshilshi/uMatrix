@@ -32,7 +32,11 @@ referrer-spoof: image.baidu.com false
 Globally whitelist Microsoft Ajax CDN
 	* ajax.aspnetcdn.com
         * ajax.aspnetcdn.com script
-              
+ 
+ Globally whitelist Bootstrap CDN
+	* cdn.bootcdn.net
+        * cdn.bootcdn.net script
+        	                   
 Globally whitelist Cloudflare CDN
 	* cdnjs.cloudflare.com
 		* cdnjs.cloudflare.com script
@@ -40,11 +44,8 @@ Globally whitelist Cloudflare CDN
 Globally whitelist Google Hosted Libraries
 	* ajax.googleapis.com
 		* ajax.googleapis.com script
+		* ajax.proxy.ustclug.org script
 		
-Globally whitelist BootCDN
-	* cdn.bootcss.com
-		* cdn.bootcss.com script
-
 Globally whitelist jsDelivr CDN
 	* cdn.jsdelivr.net
         * cdn.jsdelivr.net script
@@ -66,7 +67,11 @@ Globally whitelist jQuery CDN
 Globally whitelist Bootstrap CDN
 	* maxcdn.bootstrapcdn.com
 		* maxcdn.bootstrapcdn.com script
-
+	
+Globally whitelist UpYun CDN
+	* upcdn.b0.upaiyun.com
+		* upcdn.b0.upaiyun.com script
+		
 ! Whitlist Less public CDN library	
 Whitelist Akamaihd CDN
 	* akamaihd.net
@@ -75,7 +80,11 @@ Whitelist Akamaihd CDN
 Whitelist Baidu Developer Center
 	* apps.bdimg.com
 		_ apps.bdimg.com script
-		
+
+Whitelist Sina CDN
+	* lib.sinaapp.com
+		_ lib.sinaapp.com script
+				
 Whitelist Amazon Simple Storage Service
 	* s3.amazonaws.com
 		_ s3.amazonaws.com media
@@ -214,7 +223,7 @@ Google Translation as 3rd Party
 		_ translate.googleapis.com xhr
 		_ translate.googleusercontent.com frame
 		_ translate.googleusercontent.com script
-
+		
 Youku as 3rd Party
 	* youku.com
 		_ static.youku.com script
@@ -224,7 +233,6 @@ Youku as 3rd Party
 ! Other Rulesets
 NetEase
 	163.com *
-		referrer-spoof: 163.com false
 		_ 1st-party script
 		_ img1.126.net frame
 		_ img2.126.net script
@@ -235,6 +243,7 @@ NetEase
 		
 NetEase Music
 	music.163.com *
+		referrer-spoof: _ false
 		_ s3.music.126.net script
 		_ music.126.net media
 		_ music.126.net xhr
@@ -275,27 +284,25 @@ Tmall HK
 Baidu
 	baidu.com *
 		_ 1st-party script
-		_ passport.bdimg.com script
+		baidu.com bdimg.com *
+		baidu.com bdimg.com script
+		baidu.com bdimg.com xhr
+		baidu.com cdn.bcebos.com *
+		baidu.com cdn.bcebos.com script
+		baidu.com cdn.bcebos.com media
+		baidu.com cdn.bcebos.com xhr
 		_ ss0.bdstatic.com script
 		_ ss1.bdstatic.com script
 
 Baidu Image
 	 image.baidu.com *
 		referrer-spoof: _ false
-
-Baidu Baike
-	baike.baidu.com *
-		_ bkssl.bdimg.com script
-		
+	
 Baidu Music
 	music.baidu.com *
 		_ mu5.bdstatic.com script
 		_ mu6.bdstatic.com script
 		_ mu7.bdstatic.com script
-
-Baidu Trans
-	fanyi.baidu.com *
-		_ fanyi-cdn.cdn.bcebos.com script
 
 Baidu Tieba
 	tieba.baidu.com *
@@ -306,38 +313,15 @@ Baidu Video
 	v.baidu.com *
 		_ vs5.bdstatic.com script
 		_ vs6.bdstatic.com script
-		
-Baidu Zhidao
-	zhidao.baidu.com *	
-		_ iknowpc.bdimg.com script
 
 Baidu Exp
 	jingyan.baidu.com *
 		_ exp.bdstatic.com script
-		_ ksv-video-publish.cdn.bcebos.com media
-		_ ksv-video-publish.cdn.bcebos.com xhr
-				
-Baidu Map
-	map.baidu.com *
-		_ maponline0.bdimg.com script
-		_ maponline0.bdimg.com xhr
-		_ maponline1.bdimg.com xhr
-		_ maponline2.bdimg.com xhr
-		_ maponline3.bdimg.com xhr
-		_ webmap0.bdimg.com script
-		_ webmap1.bdimg.com script
 		
 Baidu Yun
 	pan.baidu.com *
 		_ baidupcs.com frame
 		_ code.bdstatic.com script
-
-Baidu Wenku
-	wenku.baidu.com *
-		_ wkbjcloudbos.bdimg.com script
-		_ wkbos.bdimg.com script
-		_ wkretype.bdimg.com script
-		_ wkstatic.bdimg.com script
 
 Hupu
 	bbs.hupu.com *
@@ -369,8 +353,8 @@ Douyin
 
 CSDN Blog
 	blog.csdn.net *
-		_ csdnimg.cn script
 		_ g.csdnimg.cn script block
+		_ csdnimg.cn script
 
 JD
 	jd.com *
