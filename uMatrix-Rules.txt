@@ -16,6 +16,8 @@ no-workers: * false
 noscript-spoof: * false
 referrer-spoof: * true
 referrer-spoof: behind-the-scene false
+referrer-spoof: bilibili.com false
+referrer-spoof: dropbox.com false
 referrer-spoof: image.baidu.com false
 
 * * * block
@@ -27,50 +29,90 @@ referrer-spoof: image.baidu.com false
 * 1st-party * allow
 * 1st-party cookie allow
 * 1st-party frame allow
+* ajax.aspnetcdn.com script allow
+* ajax.googleapis.com script allow
+* ajax.proxy.ustclug.org script allow
+* apis.google.com script allow
+* cdn.bootcdn.net script allow
+* cdn.bootcss.com allow
+* cdn.jsdelivr.net script allow
+* cdn.staticfile.org script allow
+* cdnjs.cloudflare.com script allow
+* cloudfront.net media allow
+* cloudfront.net script allow
+* cloudfront.net xhr allow
+* code.jquery.com script allow
+* maxcdn.bootstrapcdn.com script allow
+* translate.googleapis.com script allow
+* translate.googleapis.com xhr allow
+* translate.googleusercontent.com frame allow
+* translate.googleusercontent.com script allow
+* upcdn.b0.upaiyun.com script allow
+* g.csdnimg.cn script block
 
-! Global Whitlist public CDN library
-Globally whitelist Microsoft Ajax CDN
-	* ajax.aspnetcdn.com
-        * ajax.aspnetcdn.com script
- 
- Globally whitelist Bootstrap CDN
-	* cdn.bootcdn.net
-        * cdn.bootcdn.net script
-        	                   
-Globally whitelist Cloudflare CDN
-	* cdnjs.cloudflare.com
-		* cdnjs.cloudflare.com script
-
-Globally whitelist Google Hosted Libraries
-	* ajax.googleapis.com
-		* ajax.googleapis.com script
-		* ajax.proxy.ustclug.org script
-		
-Globally whitelist jsDelivr CDN
-	* cdn.jsdelivr.net
-        * cdn.jsdelivr.net script
-
-Globally whitelist Staticfile CDN
-	* cdn.staticfile.org
-		* cdn.staticfile.org script
-
-Globally whitelist Amazon CloudFront CDN
-	* cloudfront.net
-		* cloudfront.net media
-		* cloudfront.net script
-		* cloudfront.net xhr
-
-Globally whitelist jQuery CDN
-	* code.jquery.com
-		* code.jquery.com script
-
-Globally whitelist Bootstrap CDN
-	* maxcdn.bootstrapcdn.com
-		* maxcdn.bootstrapcdn.com script
-	
-Globally whitelist UpYun CDN
-	* upcdn.b0.upaiyun.com
-		* upcdn.b0.upaiyun.com script
+addons.mozilla.org addons-amo.cdn.mozilla.net script allow
+baidu.com bdimg.com * allow
+baidu.com bdimg.com script allow
+baidu.com bdimg.com xhr allow
+baidu.com cdn.bcebos.com * allow
+baidu.com cdn.bcebos.com media allow
+baidu.com cdn.bcebos.com script allow
+baidu.com cdn.bcebos.com xhr allow
+bbs.hupu.com hoopchina.com.cn script allow
+bbs.hupu.com v.hoopchina.com.cn media allow
+bilibili.com acgvideo.com media allow
+bilibili.com acgvideo.com xhr allow
+bilibili.com bilivideo.com media allow
+bilibili.com bilivideo.com xhr allow
+bilibili.com hdslb.com script allow
+blog.csdn.net csdnimg.cn script allow
+dropbox.com 127.0.0.1 xhr allow
+dropbox.com dropboxstatic.com script allow
+github.com github.githubassets.com script allow
+github.com pages-themes.github.io frame allow
+github.com pages-themes.github.io script allow
+github.com raw.githubusercontent.com xhr allow
+github.com sourcegraph.com xhr allow
+gitlab.com gitlab-static.net script allow
+google.com gstatic.com script allow
+iesdouyin.com aweme.snssdk.com media allow
+iesdouyin.com aweme.snssdk.com xhr allow
+iesdouyin.com ixigua.com media allow
+iesdouyin.com s3.bytecdn.cn script allow
+iesdouyin.com s3.pstatp.com script allow
+jd.com 3.cn script allow
+jd.com 360buyimg.com script allow
+jd.hk 3.cn script allow
+jd.hk 360buyimg.com script allow
+jd.hk jd.com * allow
+jingyan.baidu.com exp.bdstatic.com script allow
+mega.nz mega.co.nz script allow
+mega.nz mega.co.nz xhr allow
+music.baidu.com mu5.bdstatic.com script allow
+music.baidu.com mu6.bdstatic.com script allow
+music.baidu.com mu7.bdstatic.com script allow
+pan.baidu.com baidupcs.com frame allow
+pan.baidu.com code.bdstatic.com script allow
+tieba.baidu.com tb1.bdstatic.com media allow
+tieba.baidu.com tb1.bdstatic.com script allow
+v.baidu.com vs5.bdstatic.com script allow
+v.baidu.com vs6.bdstatic.com script allow
+weibo.cn f.video.weibocdn.com media allow
+weibo.cn f.video.weibocdn.com xhr allow
+weibo.cn miaopai.video.weibocdn.com media allow
+weibo.cn sjs.sinajs.cn script allow
+weibo.cn t.sinajs.cn script allow
+weibo.com f.video.weibocdn.com media allow
+weibo.com f.video.weibocdn.com xhr allow
+weibo.com miaopai.video.weibocdn.com media allow
+weibo.com sjs.sinajs.cn script allow
+weibo.com t.sinajs.cn script allow
+xda-developers.com xda-cdn.com script allow
+youku.com * media allow
+youku.com * xhr allow
+youku.com 127.0.0.1 script allow
+youtube.com googlevideo.com xhr allow
+youtube.com ytimg.com script allow
 		
 ! Whitlist Less public CDN library	
 Whitelist Akamaihd CDN
@@ -99,11 +141,6 @@ Whitelist UNPKG CDN
 	* unpkg.com
 		_ unpkg.com script
 		
-Whitelist Google Services
-	* apis.google.com
-		_ apis.google.com script
-		_ googleusercontent.com frame
-
 Whitelist Cat Networks
 	* cdnjs.cat.net
 		_ cdnjs.cat.net script
@@ -113,29 +150,14 @@ Whitelist Simple Images Hosting
 		_ cdnjs.loli.net script
 
 ! Whitlist Captcha Services
-Whitlist Google reCaptcha
-	* www.google.com
-		_ www.google.com script
-		_ www.google.com frame
-		_ www.google.com xhr
-		_ www.gstatic.com script
-
-Whitlist Google reCaptcha CN
-	* www.google.cn
-		_ www.google.cn script
-		_ www.google.cn frame
-		_ www.google.cn xhr
-		_ www.gstatic.cn script
-
 Whitlist reCaptcha
 	* recaptcha.net
 		_ recaptcha.net script
 		_ recaptcha.net frame
 		_ recaptcha.net xhr
-		_ www.gstatic.com script
 			
 Whitelist GeeTest Captcha
-	* geetest.com		
+	* geetest.com
 		_ api.geetest.com script
 		_ monitor.geetest.com script
 		_ static.geetest.com script
@@ -161,326 +183,13 @@ Whitelist NetEase Captcha v2
 Whitlist Alicdn(3rd)
 	* alicdn.com
 		_ g.alicdn.com script
-		
-Whitlist Alicdn(3rd) for Alibaba
-	* alicdn.com
-		_ assets.alicdn.com script
-		_ desc.alicdn.com script
-		_ g.alicdn.com cookie
-		_ g.alicdn.com frame
-		_ g.alicdn.com xhr
-		_ hdc1.alicdn.com script
-		_ uaction.alicdn.com script		
-		_ t.alicdn.com script
-		_ tbip.alicdn.com script
-		_ tce.alicdn.com script
 
-Alipay as 3rd Party
-	* alipay.com
-		_ alipay.com cookie
-		_ ynuf.alipay.com script
-		_ ynuf.alipay.com xhr
-
-ZWDT as 3rd Party
-	* zwdt.sh.gov.cn
-		_ zwdt.sh.gov.cn frame
-		_ zwdt.sh.gov.cn script
-		_ zwdt.sh.gov.cn xhr
-		_ zwdtuser.sh.gov.cn cookie
-		_ zwdtuser.sh.gov.cn frame
-		_ zwdtuser.sh.gov.cn script
-
-Eshimin as 3rd Party
-	* api.eshimin.com
-		_ api.eshimin.com frame
-		_ api.eshimin.com script
-
-MS Live as 3rd Party
-	* auth.gfx.ms
-		_ auth.gfx.ms script
-		_ mem.gfx.ms *
-		_ statics-uhf-eus.akamaized.net script
-
-MS Office as 3rd Party
-	* office.com
-		_ delve.office.com *
-		_ www.office.com frame
-		_ office.net *
-		_ res.office365.com *
-		_ officeapps.live.com frame
-		_ assets.onestore.ms script
-		_ msocdn.com script
-		_ statics-onestore-eas-ms-com.akamaized.net script
-
-Google Maps as 3rd Party
-	*	www.google.*
-		_ kh.google.com xhr
-		_ maps.googleapis.com script
-												
-Google Translation as 3rd Party
-	* translate.google.com
-		_ translate.googleapis.com script
-		_ translate.googleapis.com xhr
-		_ translate.googleusercontent.com frame
-		_ translate.googleusercontent.com script
-		
 Youku as 3rd Party
 	* youku.com
 		_ static.youku.com script
 		_ js.ykimg.com script
 		_ r1.ykimg.com script
 
-! Other Rulesets
-NetEase
-	163.com *
-		_ 1st-party script
-		_ img1.126.net frame
-		_ img2.126.net script
-		_ static.ws.126.net script
-		_ ursdoccdn.nosdn.127.net script
-		_ wr.da.netease.com script
-		_ flv.bn.netease.com media
-		
-NetEase Music
-	music.163.com *
-		referrer-spoof: _ false
-		_ s3.music.126.net script
-		_ music.126.net media
-		_ music.126.net xhr
-		_ sdk1xyajs-data.xycdn.com xhr
-
-Alipay
-	alipay.com *
-		_ 1st-party script
-		_ a.alipayobjects.com script
-		_ as.alipayobjects.com script
-		_ gw.alipayobjects.com script
-		_ os.alipayobjects.com script
-		_ t.alipayobjects.com media
-		_ t.alipayobjects.com script
-
-Taobao
-	taobao.com *
-		_ 1st-party script
-		_ tmall.com *
-		_ alibaba.com cookie
-		_ localhost.wwbizsrv.alibaba.com script
-
-Tmall
-	tmall.com *
-		_ 1st-party script
-		_ taobao.com *
-		_ alibaba.com cookie
-		_ localhost.wwbizsrv.alibaba.com script		
-
-Tmall HK
-	tmall.hk *
-		_ 1st-party script
-		_ taobao.com *
-		_ tmall.com *
-		_ alibaba.com cookie
-		_ localhost.wwbizsrv.alibaba.com script
-
-Baidu
-	baidu.com *
-		_ 1st-party script
-		baidu.com bdimg.com *
-		baidu.com bdimg.com script
-		baidu.com bdimg.com xhr
-		baidu.com cdn.bcebos.com *
-		baidu.com cdn.bcebos.com script
-		baidu.com cdn.bcebos.com media
-		baidu.com cdn.bcebos.com xhr
-		_ ss0.bdstatic.com script
-		_ ss1.bdstatic.com script
-
-Baidu Image
-	 image.baidu.com *
-		referrer-spoof: _ false
-	
-Baidu Music
-	music.baidu.com *
-		_ mu5.bdstatic.com script
-		_ mu6.bdstatic.com script
-		_ mu7.bdstatic.com script
-
-Baidu Tieba
-	tieba.baidu.com *
-		_ tb1.bdstatic.com media
-		_ tb1.bdstatic.com script
-
-Baidu Video
-	v.baidu.com *
-		_ vs5.bdstatic.com script
-		_ vs6.bdstatic.com script
-
-Baidu Exp
-	jingyan.baidu.com *
-		_ exp.bdstatic.com script
-		
-Baidu Yun
-	pan.baidu.com *
-		_ baidupcs.com frame
-		_ code.bdstatic.com script
-
-Hupu
-	bbs.hupu.com *
-		_ 1st-party script
-		_ hoopchina.com.cn script
-		_ v.hoopchina.com.cn media
-
-Bilibili
-	bilibili.com *
-		https-strict: account.bilibili.com false
-		referrer-spoof: bilibili.com false
-		_ 1st-party script
-		_ acgvideo.com media
-		_ acgvideo.com xhr
-		_ s1.hdslb.com script
-		_ s2.hdslb.com script
-		_ s3.hdslb.com script
-		_ static.hdslb.com script
-		_ bilivideo.com media
-		_ bilivideo.com xhr
-
-Douyin
-	iesdouyin.com *
-		_ aweme.snssdk.com media
-		_ aweme.snssdk.com xhr
-		_ ixigua.com media
-		_ s3.bytecdn.cn script
-		_ s3.pstatp.com script
-
-CSDN Blog
-	blog.csdn.net *
-		_ g.csdnimg.cn script block
-		_ csdnimg.cn script
-
-JD
-	jd.com *
-		_ 1st-party script
-		_ 3.cn script
-		_ misc.360buyimg.com script
-		_ static.360buyimg.com script
-
-JD HK
-	jd.hk *
-		_ 1st-party script
-		_ jd.com *
-		_ 3.cn script
-		_ misc.360buyimg.com script
-		_ static.360buyimg.com script
-
-Outlook(Formerly Hotmail)
-	live.com *
-		_ 1st-party script
-		_ account.azureedge.net script
-		_ owamail.azureedge.net xhr
-		_ az725175.vo.msecnd.net script
-		_ web.vortex.data.microsoft.com *
-
-Microsoft
-	microsoft.com *
-		_ 1st-party script
-		_ i2-msdn.sec.s-msft.com script
-		_ login.live.com frame
-
-Mozilla Addons
-	addons.mozilla.org *
-		_ 1st-party script		
-		_ addons-amo.cdn.mozilla.net script
-
-Sina Video
-	video.sina.com.cn *
-		_ i3.sinaimg.cn script
-		_ n.sinaimg.cn script
-		_ sax.sina.com.cn script
-		_ sjs2.sinajs.cn script
-
-Weibo.com
-	weibo.com *
-		_ 1st-party script
-		_ h5.sinaimg.cn script
-		_ js.t.sinajs.cn script
-		_ js1.t.sinajs.cn script
-		_ js2.t.sinajs.cn script
-		_ jss.t.sinajs.cn script
-		_ tjs.sjs.sinajs.cn script
-		_ f.video.weibocdn.com media
-		_ f.video.weibocdn.com xhr
-		_ miaopai.video.weibocdn.com media
-
-Weibo.cn
-	weibo.cn *
-		_ 1st-party script
-		_ weibo.com *
-		_ h5.sinaimg.cn script
-		_ js.t.sinajs.cn script
-		_ js1.t.sinajs.cn script
-		_ js2.t.sinajs.cn script
-		_ jss.t.sinajs.cn script
-		_ tjs.sjs.sinajs.cn script
-		_ f.video.weibocdn.com media
-		_ f.video.weibocdn.com xhr
-		_ miaopai.video.weibocdn.com media
-		
-Youku
-	youku.com *
-		_ * media
-		_ * xhr
-		_ 1st-party script
-		_ 127.0.0.1 script
-	
-Github
-	github.com *
-		_ 1st-party script
-		_ github.githubassets.com script
-		_ pages-themes.github.io frame
-		_ pages-themes.github.io script
-		_ raw.githubusercontent.com xhr
-		! Required for raw/diff view of some files (e.g. pictures, pdf, svg)
-		_ render.githubusercontent.com frame
-		_ render.githubusercontent.com script
-		_ sourcegraph.com xhr
-
-Gitlab
-	gitlab.com *
-		_ 1st-party script
-		_ gitlab-static.net script
-
-Dropbox
-	dropbox.com *
-		referrer-spoof: dropbox.com false
-		_ 1st-party script
-		_ 127.0.0.1 xhr
-		_ dropboxstatic.com script
-		
-MEGA
-	mega.nz *
-		_ 1st-party script
-		_ mega.co.nz script
-		_ mega.co.nz xhr
-
-XDA-Developers
-	xda-developers.com *
-		_ 1st-party script
-		_ xda-cdn.com script
-
-Youtube no account
-	youtube.com *
-		_ 1st-party script
-		_ googlevideo.com xhr
-		_ ytimg.com script
-
-Youtube with account
-	youtube.com *
-		_ 1st-party script
-		_ googlevideo.com xhr
-		_ ytimg.com script
-		_ google.com cookie
-		
-Google account sign in
-	accounts.google.com *
-		_ 1st-party *
-		_ 1st-party cookie
-		_ gstatic.com script
+Weibo as 3rd Party
+	* sinaimg.cn
+		_ sinaimg.cn script
