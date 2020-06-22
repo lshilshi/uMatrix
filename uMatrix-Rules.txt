@@ -128,7 +128,7 @@ Whitelist Sina CDN
 		_ lib.sinaapp.com script
 				
 Whitelist Amazon Simple Storage Service
-	* s3.amazonaws.com
+	* amazonaws.com
 		_ s3.amazonaws.com media
 		_ s3.amazonaws.com script
 		_ s3.amazonaws.com xhr
@@ -166,6 +166,11 @@ Whitelist Tencent Captcha
 	* captcha.gtimg.com
 		_ captcha.gtimg.com frame
 		_ captcha.gtimg.com script
+
+Whitelist Alibaba Captcha
+	* cf.aliyun.com
+		_ cf.aliyun.com script
+		_ a.alipayobjects.com script
 		
 Whitelist NetEase Captcha
 	* acstatic-dun.126.net
@@ -183,7 +188,9 @@ Whitelist NetEase Captcha v2
 Whitlist Alicdn(3rd)
 	* alicdn.com
 		_ g.alicdn.com script
-
+		_ g.alicdn.com xhr
+		_ assets.alicdn.com script
+		
 Youku as 3rd Party
 	* youku.com
 		_ static.youku.com script
