@@ -59,6 +59,9 @@ Decentraleyes-global
 	* ajax.aspnetcdn.com
 		* ajax.aspnetcdn.com script allow
 		* ajax.aspnetcdn.com xhr allow
+	* ajax.cloudflare.com
+		* ajax.cloudflare.com script allow
+		* ajax.cloudflare.com xhr allow
 	* ajax.googleapis.com
 		* ajax.googleapis.com script allow
 		* ajax.googleapis.com xhr allow
@@ -491,7 +494,10 @@ aliexpress.com tbcdn.cn script allow
 * autonavi.com * block
 
 ! Tencent
+mail.qq.com qq.com * inherit
 mp.weixin.qq.com qq.com * inherit
+ptlogin2.qq.com qq.com * inherit
+docs.qq.com qq.com * inherit
 y.qq.com qq.com * inherit
 * qq.com * block
 * qq.com image allow
@@ -1065,6 +1071,8 @@ Whitelist GeeTest CAPTCHA
 		_ static.geetest.com script
 
 Whitelist Tencent CAPTCHA
+	* captcha.qq.com
+		_ captcha.qq.com script
 	* captcha.gtimg.com
 		_ captcha.gtimg.com frame
 		_ captcha.gtimg.com script
