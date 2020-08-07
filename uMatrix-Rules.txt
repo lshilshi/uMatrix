@@ -44,11 +44,12 @@ behind-the-scene cloudopt.net * block
 * * frame block
 * * image allow
 * * media allow
-* * other allow
+* * other block
 * * xhr allow
 * 1st-party * allow
 * 1st-party cookie allow
 * 1st-party frame allow
+* 1st-party other allow
 * 1st-party script allow
 * 3rd-party doc inherit
 
@@ -386,159 +387,30 @@ xiami.com res.xiami.net script allow
 xiami.com tbcdn.cn script allow
 
 ! Baidu
+* baidustatic.com * block
+* bdstatic.com * block
+* bcebos.com * block
 baidu.com bdimg.com script allow
+baidu.com bdstatic.com css allow
+baidu.com bdstatic.com image allow
 baidu.com bdstatic.com script allow
 baidu.com cdn.bcebos.com script allow
 pan.baidu.com baidupcs.com frame allow
-
-! Alibaba Group
-! Taobao
-taobao.com aliapp.org script allow
-taobao.com alibaba.com cookie allow
-taobao.com alibaba.com frame allow
-taobao.com alibaba.com script allow
-taobao.com alicdn.com frame allow
-taobao.com alipay.com cookie allow
-taobao.com alipay.com frame allow
-taobao.com alipay.com script allow
-taobao.com alipayobjects.com script allow
-taobao.com alipcsec.com script allow
-taobao.com aliyun.com cookie allow
-taobao.com aliyun.com frame allow
-taobao.com aliyun.com script allow
-taobao.com tbcdn.cn script allow
-taobao.com tmall.com frame allow
-taobao.com tmall.com script allow
-tmall.com alibaba.com cookie allow
-tmall.com alibaba.com frame allow
-tmall.com alibaba.com script allow
-tmall.com alicdn.com frame allow
-tmall.com alipay.com cookie allow
-tmall.com alipay.com frame allow
-tmall.com alipay.com script allow
-tmall.com alipayobjects.com script allow
-tmall.com aliyun.com cookie allow
-tmall.com aliyun.com frame allow
-tmall.com aliyun.com script allow
-tmall.com taobao.com cookie allow
-tmall.com taobao.com frame allow
-tmall.com taobao.com script allow
-tmall.com tbcdn.cn script allow
-! Alipay
-alipay.com alibaba.com cookie allow
-alipay.com alibaba.com frame allow
-alipay.com alibaba.com script allow
-alipay.com alicdn.com frame allow
-alipay.com alipayobjects.com script allow
-alipay.com aliyun.com cookie allow
-alipay.com aliyun.com frame allow
-alipay.com aliyun.com script allow
-alipay.com taobao.com cookie allow
-alipay.com taobao.com frame allow
-alipay.com taobao.com script allow
-alipay.com tbcdn.cn script allow
-! 1688
-1688.com sec.1688.com * block
-1688.com alibaba.com cookie allow
-1688.com alibaba.com frame allow
-1688.com alibaba.com script allow
-1688.com alicdn.com frame allow
-1688.com alipay.com cookie allow
-1688.com alipay.com frame allow
-1688.com alipay.com script allow
-1688.com alipayobjects.com script allow
-1688.com aliyun.com cookie allow
-1688.com aliyun.com frame allow
-1688.com aliyun.com script allow
-1688.com taobao.com cookie allow
-1688.com taobao.com frame allow
-1688.com taobao.com script allow
-1688.com tbcdn.cn script allow
-! Alibaba
-alibaba.com alicdn.com frame allow
-alibaba.com aliexpress.com cookie allow
-alibaba.com aliexpress.com script allow
-alibaba.com alipay.com cookie allow
-alibaba.com alipay.com frame allow
-alibaba.com alipay.com script allow
-alibaba.com alipayobjects.com script allow
-alibaba.com aliyun.com cookie allow
-alibaba.com aliyun.com frame allow
-alibaba.com aliyun.com script allow
-alibaba.com aliunicorn.com script allow
-alibaba.com taobao.com cookie allow
-alibaba.com taobao.com frame allow
-alibaba.com taobao.com script allow
-alibaba.com tbcdn.cn script allow
-! Aliexpress
-aliexpress.com alibaba.com cookie allow
-aliexpress.com alibaba.com frame allow
-aliexpress.com alibaba.com script allow
-aliexpress.com alicdn.com frame allow
-aliexpress.com alipay.com cookie allow
-aliexpress.com alipay.com frame allow
-aliexpress.com alipay.com script allow
-aliexpress.com alipayobjects.com script allow
-aliexpress.com aliyun.com cookie allow
-aliexpress.com aliyun.com frame allow
-aliexpress.com aliyun.com script allow
-aliexpress.com taobao.com cookie allow
-aliexpress.com taobao.com frame allow
-aliexpress.com taobao.com script allow
-aliexpress.com tbcdn.cn script allow
-! gaode map
-* gaode.com * block
-* amap.com * block
-* amapauto.com * block
-* anav.com * block
-* autonavi.com * block
-
-! Tencent
-mail.qq.com qq.com * inherit
-mp.weixin.qq.com qq.com * inherit
-ptlogin2.qq.com qq.com * inherit
-docs.qq.com qq.com * inherit
-y.qq.com qq.com * inherit
-* qq.com * block
-* qq.com image allow
-* tencent.com * block
-* pcmgr-global.com * block
-* beacon.gtimg.com * block
-* lb.gtimg.com * block
-* wa.gtimg.com * block
-* wb.gtimg.com * block
-* pgdt.gtimg.cn * block
-* soso.com * block
-* sougou.com * block
-
-! Baidu
-* bdstatic.com image allow
-* hiphotos.baidu.com image allow
-baidu.com bdimg.com script allow
-www.baidu.com * cookie block
-www.baidu.com bdstatic.com css allow
-www.baidu.com bdstatic.com script allow
-pan.baidu.com baidupcs.com frame allow
 pan.baidu.com baidupcs.com other allow
-pan.baidu.com bdstatic.com script allow
 yun.baidu.com baidupcs.com frame allow
 yun.baidu.com baidupcs.com other allow
-yun.baidu.com bdstatic.com script allow
 wangpan.baidu.com baidupcs.com frame allow
 wangpan.baidu.com baidupcs.com other allow
-wangpan.baidu.com bdstatic.com script allow
 eyun.baidu.com baidupcs.com frame allow
-eyun.baidu.com bdstatic.com script allow
-image.baidu.com image.baidu.com * inherit
-image.baidu.com bdstatic.com css allow
-image.baidu.com bdstatic.com script allow
-baike.baidu.com bdimg.com script allow
-tieba.baidu.com bdstatic.com css allow
+eyun.baidu.com baidupcs.com other allow
+image.baidu.com baidu.com * inherit
+baike.baidu.com baidu.com * inherit
 tieba.baidu.com bdstatic.com media allow
-tieba.baidu.com bdstatic.com script allow
+www.baidu.com * cookie block
 iqiyi.com * xhr allow
 iqiyi.com qiyi.com script allow
 iqiyi.com qiyipic.com script allow
+* hiphotos.baidu.com image allow
 * 8.baidu.com * block
 * a.baidu.com * block
 * ad.baidu.com * block
@@ -655,9 +527,9 @@ iqiyi.com qiyipic.com script allow
 * jingjia.baidu.com * block
 * jingsuan.baidu.com * block
 * jingyan.baidu.com * block
+jingyan.baidu.com baidu.com * inherit
 * koubei.baidu.com * block
 * kstj.baidu.com * block
-* libs.baidu.com * block
 * lingxi.baidu.com * block
 * liulanqi.baidu.com * block
 * lvshi.baidu.com * block
@@ -666,6 +538,7 @@ iqiyi.com qiyipic.com script allow
 * m1.baidu.com * block
 * ma.baidu.com * block
 * map.baidu.com * block
+map.baidu.com baidu.com * inherit
 * mb.baidu.com * block
 * mi.baidu.com * block
 * mo.baidu.com * block
@@ -681,6 +554,7 @@ iqiyi.com qiyipic.com script allow
 * mtc.baidu.com * block
 * mtj.baidu.com * block
 * music.baidu.com * block
+music.baidu.com baidu.com * inherit
 * myshifen.baidu.com * block
 * naotu.baidu.com * block
 * neirong.baidu.com * block
@@ -765,6 +639,7 @@ iqiyi.com qiyipic.com script allow
 * weirenwu.baidu.com * block
 * weishi.baidu.com * block
 * wenku.baidu.com * block
+wenku.baidu.com baidu.com * inherit
 * wkclick.baidu.com * block
 * wm.baidu.com * block
 * wm123.baidu.com * block
@@ -773,6 +648,7 @@ iqiyi.com qiyipic.com script allow
 * www2.baidu.com * block
 * x.baidu.com * block
 * xueshu.baidu.com * block
+xueshu.baidu.com baidu.com * inherit
 * y.baidu.com * block
 * yingxiao.baidu.com * block
 * youke.baidu.com * block
@@ -785,12 +661,10 @@ iqiyi.com qiyipic.com script allow
 * zhaopin.baidu.com * block
 * zhidahao.baidu.com * block
 * zhidao.baidu.com * block
+zhidao.baidu.com baidu.com * inherit
 * zhuanli.baidu.com * block
 * zhuomian.baidu.com * block
 * znsv.baidu.com * block
-* baidustatic.com * block
-* bdstatic.com * block
-* bcebos.com * block
 * ad.duapps.com * block
 * channel.api.duapp.com * block
 * api.mobula.sdk.duapps.com * block
@@ -816,6 +690,128 @@ iqiyi.com qiyipic.com script allow
 * xiaodutv.com * block
 * zongheng.com * block
 * zybang.com * block
+
+! Alibaba Group
+! Taobao
+taobao.com aliapp.org script allow
+taobao.com alibaba.com cookie allow
+taobao.com alibaba.com frame allow
+taobao.com alibaba.com script allow
+taobao.com alicdn.com frame allow
+taobao.com alipay.com cookie allow
+taobao.com alipay.com frame allow
+taobao.com alipay.com script allow
+taobao.com alipayobjects.com script allow
+taobao.com alipcsec.com script allow
+taobao.com aliyun.com cookie allow
+taobao.com aliyun.com frame allow
+taobao.com aliyun.com script allow
+taobao.com tbcdn.cn script allow
+taobao.com tmall.com frame allow
+taobao.com tmall.com script allow
+tmall.com alibaba.com cookie allow
+tmall.com alibaba.com frame allow
+tmall.com alibaba.com script allow
+tmall.com alicdn.com frame allow
+tmall.com alipay.com cookie allow
+tmall.com alipay.com frame allow
+tmall.com alipay.com script allow
+tmall.com alipayobjects.com script allow
+tmall.com aliyun.com cookie allow
+tmall.com aliyun.com frame allow
+tmall.com aliyun.com script allow
+tmall.com taobao.com cookie allow
+tmall.com taobao.com frame allow
+tmall.com taobao.com script allow
+tmall.com tbcdn.cn script allow
+! Alipay
+alipay.com alibaba.com cookie allow
+alipay.com alibaba.com frame allow
+alipay.com alibaba.com script allow
+alipay.com alicdn.com frame allow
+alipay.com alipayobjects.com script allow
+alipay.com aliyun.com cookie allow
+alipay.com aliyun.com frame allow
+alipay.com aliyun.com script allow
+alipay.com taobao.com cookie allow
+alipay.com taobao.com frame allow
+alipay.com taobao.com script allow
+alipay.com tbcdn.cn script allow
+! 1688
+1688.com sec.1688.com * block
+1688.com alibaba.com cookie allow
+1688.com alibaba.com frame allow
+1688.com alibaba.com script allow
+1688.com alicdn.com frame allow
+1688.com alipay.com cookie allow
+1688.com alipay.com frame allow
+1688.com alipay.com script allow
+1688.com alipayobjects.com script allow
+1688.com aliyun.com cookie allow
+1688.com aliyun.com frame allow
+1688.com aliyun.com script allow
+1688.com taobao.com cookie allow
+1688.com taobao.com frame allow
+1688.com taobao.com script allow
+1688.com tbcdn.cn script allow
+! Alibaba
+alibaba.com alicdn.com frame allow
+alibaba.com aliexpress.com cookie allow
+alibaba.com aliexpress.com script allow
+alibaba.com alipay.com cookie allow
+alibaba.com alipay.com frame allow
+alibaba.com alipay.com script allow
+alibaba.com alipayobjects.com script allow
+alibaba.com aliyun.com cookie allow
+alibaba.com aliyun.com frame allow
+alibaba.com aliyun.com script allow
+alibaba.com aliunicorn.com script allow
+alibaba.com taobao.com cookie allow
+alibaba.com taobao.com frame allow
+alibaba.com taobao.com script allow
+alibaba.com tbcdn.cn script allow
+! Aliexpress
+aliexpress.com alibaba.com cookie allow
+aliexpress.com alibaba.com frame allow
+aliexpress.com alibaba.com script allow
+aliexpress.com alicdn.com frame allow
+aliexpress.com alipay.com cookie allow
+aliexpress.com alipay.com frame allow
+aliexpress.com alipay.com script allow
+aliexpress.com alipayobjects.com script allow
+aliexpress.com aliyun.com cookie allow
+aliexpress.com aliyun.com frame allow
+aliexpress.com aliyun.com script allow
+aliexpress.com taobao.com cookie allow
+aliexpress.com taobao.com frame allow
+aliexpress.com taobao.com script allow
+aliexpress.com tbcdn.cn script allow
+! gaode map
+* gaode.com * block
+* amap.com * block
+* amapauto.com * block
+* anav.com * block
+* autonavi.com * block
+
+! Tencent
+* qq.com * block
+* qq.com image allow
+mail.qq.com qq.com * inherit
+mp.weixin.qq.com qq.com * inherit
+ptlogin2.qq.com qq.com * inherit
+docs.qq.com qq.com * inherit
+docs.qq.com docs.idqqimg.com script allow
+v.qq.com qq.com * inherit
+y.qq.com qq.com * inherit
+* tencent.com * block
+* pcmgr-global.com * block
+* beacon.gtimg.com * block
+* lb.gtimg.com * block
+* wa.gtimg.com * block
+* wb.gtimg.com * block
+* pgdt.gtimg.cn * block
+* soso.com * block
+* sougou.com * block
 
 ! Qihoo 360
 * 360.com * block
@@ -1072,6 +1068,7 @@ Whitelist GeeTest CAPTCHA
 
 Whitelist Tencent CAPTCHA
 	* captcha.qq.com
+		_ captcha.qq.com frame
 		_ captcha.qq.com script
 	* captcha.gtimg.com
 		_ captcha.gtimg.com frame
@@ -1081,7 +1078,6 @@ Whitelist Alibaba CAPTCHA
 	* cf.aliyun.com
 		_ cf.aliyun.com script
 		_ a.alipayobjects.com script
-		_ ynuf.aliapp.org xhr
 		
 Whitelist NetEase CAPTCHA
 	* 126.net
