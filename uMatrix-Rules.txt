@@ -403,8 +403,9 @@ wangpan.baidu.com baidupcs.com frame allow
 wangpan.baidu.com baidupcs.com other allow
 eyun.baidu.com baidupcs.com frame allow
 eyun.baidu.com baidupcs.com other allow
-image.baidu.com baidu.com * inherit
-baike.baidu.com baidu.com * inherit
+image.baidu.com image.baidu.com * inherit
+baike.baidu.com baike.baidu.com * inherit
+tieba.baidu.com tieba.baidu.com * inherit
 tieba.baidu.com bdstatic.com media allow
 www.baidu.com * cookie block
 iqiyi.com * xhr allow
@@ -527,7 +528,7 @@ iqiyi.com qiyipic.com script allow
 * jingjia.baidu.com * block
 * jingsuan.baidu.com * block
 * jingyan.baidu.com * block
-jingyan.baidu.com baidu.com * inherit
+jingyan.baidu.com jingyan.baidu.com * inherit
 * koubei.baidu.com * block
 * kstj.baidu.com * block
 * lingxi.baidu.com * block
@@ -538,7 +539,7 @@ jingyan.baidu.com baidu.com * inherit
 * m1.baidu.com * block
 * ma.baidu.com * block
 * map.baidu.com * block
-map.baidu.com baidu.com * inherit
+map.baidu.com map.baidu.com * inherit
 * mb.baidu.com * block
 * mi.baidu.com * block
 * mo.baidu.com * block
@@ -554,7 +555,7 @@ map.baidu.com baidu.com * inherit
 * mtc.baidu.com * block
 * mtj.baidu.com * block
 * music.baidu.com * block
-music.baidu.com baidu.com * inherit
+music.baidu.com music.baidu.com * inherit
 * myshifen.baidu.com * block
 * naotu.baidu.com * block
 * neirong.baidu.com * block
@@ -639,7 +640,7 @@ music.baidu.com baidu.com * inherit
 * weirenwu.baidu.com * block
 * weishi.baidu.com * block
 * wenku.baidu.com * block
-wenku.baidu.com baidu.com * inherit
+wenku.baidu.com wenku.baidu.com * inherit
 * wkclick.baidu.com * block
 * wm.baidu.com * block
 * wm123.baidu.com * block
@@ -648,7 +649,7 @@ wenku.baidu.com baidu.com * inherit
 * www2.baidu.com * block
 * x.baidu.com * block
 * xueshu.baidu.com * block
-xueshu.baidu.com baidu.com * inherit
+xueshu.baidu.com xueshu.baidu.com * inherit
 * y.baidu.com * block
 * yingxiao.baidu.com * block
 * youke.baidu.com * block
@@ -661,7 +662,7 @@ xueshu.baidu.com baidu.com * inherit
 * zhaopin.baidu.com * block
 * zhidahao.baidu.com * block
 * zhidao.baidu.com * block
-zhidao.baidu.com baidu.com * inherit
+zhidao.baidu.com zhidao.baidu.com * inherit
 * zhuanli.baidu.com * block
 * zhuomian.baidu.com * block
 * znsv.baidu.com * block
