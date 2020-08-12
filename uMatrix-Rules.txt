@@ -394,7 +394,9 @@ baidu.com bdimg.com script allow
 baidu.com bdstatic.com css allow
 baidu.com bdstatic.com image allow
 baidu.com bdstatic.com script allow
+baidu.com cdn.bcebos.com image allow
 baidu.com cdn.bcebos.com script allow
+baidu.com cdn.bcebos.com css allow
 pan.baidu.com baidupcs.com frame allow
 pan.baidu.com baidupcs.com other allow
 yun.baidu.com baidupcs.com frame allow
@@ -490,6 +492,7 @@ iqiyi.com qiyipic.com script allow
 * f12.baidu.com * block
 * fang.baidu.com * block
 * fanyi.baidu.com * block
+fanyi.baidu.com fanyi.baidu.com * inherit
 * fanyi-pro.baidu.com * block
 * fclick.baidu.com * block
 * fcm.baidu.com * block
