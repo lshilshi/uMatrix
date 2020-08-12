@@ -27,11 +27,11 @@ noscript-spoof: * true
 ! 伪造 HTTP referrer
 referrer-spoof: * true
 referrer-spoof: behind-the-scene false
-referrer-spoof: image.baidu.com false
-referrer-spoof: live.com false
-referrer-spoof: google.com false
 referrer-spoof: bilibili.com false
 referrer-spoof: cctv.com false
+referrer-spoof: google.com false
+referrer-spoof: image.baidu.com false
+referrer-spoof: live.com false
 
 ! 后台网络请求管理
 * behind-the-scene * allow
@@ -163,62 +163,62 @@ Decentraleyes-global
 
 ! Whitlist 1st Services
 ! Google
-* google.com script allow
+* appspot.com script allow
+* ggpht.com script allow
 * google.cn script allow
+* google.com script allow
 * googleapis.com script allow
 * googleusercontent.com script allow
-* gstatic.com script allow
 * gstatic.cn script allow
-* ggpht.com script allow
-* appspot.com script allow
+* gstatic.com script allow
 google.com googleapis.com frame allow
 ! Google Translate
-* translate.google.com frame allow
 * translate.google.cn frame allow
+* translate.google.com frame allow
 * translate.googleusercontent.com frame allow
 ! Blogspot
-blogspot.com google.com frame allow
 blogspot.com blogblog.com * allow
 blogspot.com blogger.com * allow
 blogspot.com blogger.com frame allow
+blogspot.com google.com frame allow
 ! YouTube
 * googlevideo.com xhr allow
-* ytimg.com script allow
 * youtube.com frame allow
 * youtube.com script allow
 * youtube.com xhr allow
-youtube.com google.com cookie allow
+* ytimg.com script allow
 youtube.com apis.google.com frame allow
+youtube.com google.com cookie allow
 youtube.com googlevideo.com * allow
 youtube.com plus.google.com frame allow
 youtube.com plus.googleapis.com frame allow
 youtube.com ytimg.com * allow
 ! Google Analytics\Advertising
-* google-analytics.com * block
+* doubleclick.com * block
+* doubleclick.net * block
 * googleadservices.com * block
 * googleadsserving.cn * block
+* google-analytics.com * block
 * googlecommerce.com * block
 * googlesyndication.com * block
 * googletagmanager.com * block
 * googletagservices.com * block
-* doubleclick.com * block
-* doubleclick.net * block
 ! Google Chrome Extensions Download
-* cnplugins.com * block
 * chromecj.com * block
 * chromedownloads.net * block
+* cnplugins.com * block
 * gugeapps.com * block
 
 ! Amazon
-* ssl-images-amazon.com script allow
-* media-amazon.com script allow
-* awsstatic.com script allow
-* aws.amazon.com * allow
-* aws.amazon.com frame allow
 * amazonaws.com * allow
 * amazonaws.com frame allow
+* aws.amazon.com * allow
+* aws.amazon.com frame allow
+* awsstatic.com script allow
+* media-amazon.com script allow
 * s3.amazonaws.com * allow
 * s3.amazonaws.com frame allow
+* ssl-images-amazon.com script allow
 
 ! Mozilla Foundation				
 addons.mozilla.org addons-amo.cdn.mozilla.net script allow
@@ -255,13 +255,13 @@ live.com office365.com * allow
 live.com outlook.com * allow
 live.com sharepoint.com * allow
 live.com sharepoint.com frame allow
-! 必应
+! bing
 bing.com bing.net * allow
 bing.com live.com frame allow
 bing.com live.com script allow
 ! 必应翻译
-* ssl.bing.com script allow
 * microsofttranslator.com script allow
+* ssl.bing.com script allow
 ! Microsoft Store
 microsoftstore.com.cn microsoft.com * allow
 ! Windows
@@ -336,11 +336,11 @@ bilibili.com bilivideo.com xhr allow
 bilibili.com hdslb.com script allow
 bilibili.com hdslb.com xhr allow
 ! Youku
+v.youku.com log.mmstat.com script allow
 youku.com alicdn.com script allow
 youku.com g.alicdn.com script allow
 youku.com static.soku.com script allow
 youku.com ykimg.com script allow
-v.youku.com log.mmstat.com script allow
 ! Youtube
 youtube.com ytimg.com script allow
 ! PPTV
@@ -348,9 +348,9 @@ pptv.com pplive.cn script allow
 ! sohu tv
 * sohu.com * block
 * sohucs.com * block
-tv.sohu.com sohu.com * inherit
-tv.sohu.com js.tv.itc.cn script allow
 tv.sohu.com cdn.sohucs.com script allow
+tv.sohu.com js.tv.itc.cn script allow
+tv.sohu.com sohu.com * inherit
 ! CCAV
 tv.cctv.com cctvpic.com script allow
 tv.cctv.com cntv.cn script allow
@@ -359,25 +359,25 @@ douyu.com douyucdn.cn script allow
 douyu.com douyucdn.cn xhr allow
 
 ! Radio
-qingting.fm qhres.com script allow
 qingting.fm dn-growing.qbox.me script allow
+qingting.fm qhres.com script allow
 ximalaya.com kf5.com script allow
 ximalaya.com xmcdn.com script allow
 
 ! Netease
-* 163.com * block
 * 126.com * block
 * 126.net * block
 * 126.net image allow
 * 127.com * block
 * 127.net * block
+* 163.com * block
 * youdao.com * block
-music.163.com 163.com * inherit
-music.163.com 126.net * inherit
-music.163.com music.126.net script allow
-music.163.com netease.com script allow
 blog.163.com 126.net css allow
 blog.163.com 163.com * inherit
+music.163.com 126.net * inherit
+music.163.com 163.com * inherit
+music.163.com music.126.net script allow
+music.163.com netease.com script allow
 
 ! Xiami
 xiami.com g.alicdn.com script allow
@@ -387,36 +387,13 @@ xiami.com res.xiami.net script allow
 xiami.com tbcdn.cn script allow
 
 ! Baidu
-* baidustatic.com * block
-* bdstatic.com * block
-* bcebos.com * block
-baidu.com bdimg.com script allow
-baidu.com bdstatic.com css allow
-baidu.com bdstatic.com image allow
-baidu.com bdstatic.com script allow
-baidu.com cdn.bcebos.com image allow
-baidu.com cdn.bcebos.com script allow
-baidu.com cdn.bcebos.com css allow
-pan.baidu.com baidupcs.com frame allow
-pan.baidu.com baidupcs.com other allow
-yun.baidu.com baidupcs.com frame allow
-yun.baidu.com baidupcs.com other allow
-wangpan.baidu.com baidupcs.com frame allow
-wangpan.baidu.com baidupcs.com other allow
-eyun.baidu.com baidupcs.com frame allow
-eyun.baidu.com baidupcs.com other allow
-image.baidu.com image.baidu.com * inherit
-baike.baidu.com baike.baidu.com * inherit
-tieba.baidu.com tieba.baidu.com * inherit
-tieba.baidu.com bdstatic.com media allow
-www.baidu.com * cookie block
-iqiyi.com * xhr allow
-iqiyi.com qiyi.com script allow
-iqiyi.com qiyipic.com script allow
-* hiphotos.baidu.com image allow
+* 123juzi.net * block
 * 8.baidu.com * block
+* 8le8le.com * block
+* 91.com * block
 * a.baidu.com * block
 * ad.baidu.com * block
+* ad.duapps.com * block
 * adapp.baidu.com * block
 * adm.baidu.com * block
 * adscdn.baidu.com * block
@@ -424,7 +401,9 @@ iqiyi.com qiyipic.com script allow
 * ai.baidu.com * block
 * als.baidu.com * block
 * anquan.baidu.com * block
+* anquanbao.com * block
 * antivirus.baidu.com * block
+* api.mobula.sdk.duapps.com * block
 * apihome.baidu.com * block
 * apis.baidu.com * block
 * app.baidu.com * block
@@ -432,7 +411,10 @@ iqiyi.com qiyipic.com script allow
 * appc.baidu.com * block
 * as.baidu.com * block
 * baichuan.baidu.com * block
+* baidu.jp * block
+* baidustatic.com * block
 * baidutv.baidu.com * block
+* baifubao.com * block
 * baiji.baidu.com * block
 * baijiahao.baidu.com * block
 * baitong.baidu.com * block
@@ -441,7 +423,9 @@ iqiyi.com qiyipic.com script allow
 * bar.baidu.com * block
 * bav.baidu.com * block
 * bce.baidu.com * block
+* bcebos.com * block
 * bdplus.baidu.com * block
+* bdstatic.com * block
 * beidou.baidu.com * block
 * bes.baidu.com * block
 * bim.baidu.com * block
@@ -458,7 +442,9 @@ iqiyi.com qiyipic.com script allow
 * cbjs.baidu.com * block
 * cbjslog.baidu.com * block
 * ce.baidu.com * block
+* channel.api.duapp.com * block
 * chuanke.baidu.com * block
+* chuanke.com * block
 * cjhq.baidu.com * block
 * cleaner.baidu.com * block
 * client.baidu.com * block
@@ -482,6 +468,9 @@ iqiyi.com qiyipic.com script allow
 * dzl.baidu.com * block
 * e.baidu.com * block
 * eclick.baidu.com * block
+* ecma.bdimg.com * block
+* ecmb.bdimg.com * block
+* ecmc.bdimg.com * block
 * editor.baidu.com * block
 * edu.baidu.com * block
 * eiv.baidu.com * block
@@ -492,7 +481,6 @@ iqiyi.com qiyipic.com script allow
 * f12.baidu.com * block
 * fang.baidu.com * block
 * fanyi.baidu.com * block
-fanyi.baidu.com fanyi.baidu.com * inherit
 * fanyi-pro.baidu.com * block
 * fclick.baidu.com * block
 * fcm.baidu.com * block
@@ -502,15 +490,16 @@ fanyi.baidu.com fanyi.baidu.com * inherit
 * g.baidu.com * block
 * game.baidu.com * block
 * gdown.baidu.com * block
-* gimg.baidu.com * block
-* gimg.baidu.com * block
 * gongyi.baidu.com * block
 * guanjia.baidu.com * block
 * gupiao.baidu.com * block
+* hao123.com * block
 * haokan.baidu.com * block
 * hc.baidu.com * block
 * hdj.baidu.com * block
+* hiapk.com * block
 * hiphotos.baidu.com * block
+* hiphotos.baidu.com image allow
 * hm.baidu.com * block
 * hmma.baidu.com * block
 * hmobi.baidu.com * block
@@ -531,9 +520,9 @@ fanyi.baidu.com fanyi.baidu.com * inherit
 * jingjia.baidu.com * block
 * jingsuan.baidu.com * block
 * jingyan.baidu.com * block
-jingyan.baidu.com jingyan.baidu.com * inherit
 * koubei.baidu.com * block
 * kstj.baidu.com * block
+* lecai.com * block
 * lingxi.baidu.com * block
 * liulanqi.baidu.com * block
 * lvshi.baidu.com * block
@@ -542,7 +531,6 @@ jingyan.baidu.com jingyan.baidu.com * inherit
 * m1.baidu.com * block
 * ma.baidu.com * block
 * map.baidu.com * block
-map.baidu.com map.baidu.com * inherit
 * mb.baidu.com * block
 * mi.baidu.com * block
 * mo.baidu.com * block
@@ -558,7 +546,6 @@ map.baidu.com map.baidu.com * inherit
 * mtc.baidu.com * block
 * mtj.baidu.com * block
 * music.baidu.com * block
-music.baidu.com music.baidu.com * inherit
 * myshifen.baidu.com * block
 * naotu.baidu.com * block
 * neirong.baidu.com * block
@@ -567,6 +554,7 @@ music.baidu.com music.baidu.com * inherit
 * nlog.baidu.com * block
 * nsclick.baidu.com * block
 * nsclickvideo.baidu.com * block
+* nuomi.com * block
 * open.baidu.com * block
 * open2.baidu.com * block
 * openrcv.baidu.com * block
@@ -579,10 +567,12 @@ music.baidu.com music.baidu.com * inherit
 * pos.baidu.com * block
 * pro.baidu.com * block
 * pstatic.baidu.com * block
+* pups.bdimg.com * block
 * push.baidu.com * block
 * qianclick.baidu.com * block
 * qianqian.com * block
 * qiao.baidu.com * block
+* qunar.com * block
 * quzheng.baidu.com * block
 * release.baidu.com * block
 * rj.baidu.com * block
@@ -595,18 +585,21 @@ music.baidu.com music.baidu.com * inherit
 * sestat.baidu.com * block
 * shadu.baidu.com * block
 * share.baidu.com * block
+* shifen.com * block
 * shitu.baidu.com * block
 * shoujiweishi.baidu.com * block
 * shurufa.baidu.com * block
 * sinan.baidu.com * block
 * site.baidu.com * block
 * siteapp.baidu.com * block
+* skycn.net * block
 * sobar.baidu.com * block
 * sobartop.baidu.com * block
 * spcode.baidu.com * block
 * srf.baidu.com * block
 * ssp.baidu.com * block
 * stu.baidu.com * block
+* su.bdimg.com * block
 * sw.bos.baidu.com * block
 * t10.baidu.com * block
 * t11.baidu.com * block
@@ -643,7 +636,6 @@ music.baidu.com music.baidu.com * inherit
 * weirenwu.baidu.com * block
 * weishi.baidu.com * block
 * wenku.baidu.com * block
-wenku.baidu.com wenku.baidu.com * inherit
 * wkclick.baidu.com * block
 * wm.baidu.com * block
 * wm123.baidu.com * block
@@ -651,8 +643,8 @@ wenku.baidu.com wenku.baidu.com * inherit
 * wubi.baidu.com * block
 * www2.baidu.com * block
 * x.baidu.com * block
+* xiaodutv.com * block
 * xueshu.baidu.com * block
-xueshu.baidu.com xueshu.baidu.com * inherit
 * y.baidu.com * block
 * yingxiao.baidu.com * block
 * youke.baidu.com * block
@@ -665,35 +657,41 @@ xueshu.baidu.com xueshu.baidu.com * inherit
 * zhaopin.baidu.com * block
 * zhidahao.baidu.com * block
 * zhidao.baidu.com * block
-zhidao.baidu.com zhidao.baidu.com * inherit
 * zhuanli.baidu.com * block
 * zhuomian.baidu.com * block
 * znsv.baidu.com * block
-* ad.duapps.com * block
-* channel.api.duapp.com * block
-* api.mobula.sdk.duapps.com * block
-* ecma.bdimg.com * block
-* ecmb.bdimg.com * block
-* ecmc.bdimg.com * block
-* pups.bdimg.com * block
-* su.bdimg.com * block
-* baidu.jp * block
-* 123juzi.net * block
-* 8le8le.com * block
-* 91.com * block
-* anquanbao.com * block
-* baifubao.com * block
-* chuanke.com * block
-* hao123.com * block
-* hiapk.com * block
-* lecai.com * block
-* nuomi.com * block
-* qunar.com * block
-* shifen.com * block
-* skycn.net * block
-* xiaodutv.com * block
 * zongheng.com * block
 * zybang.com * block
+baidu.com bdimg.com script allow
+baidu.com bdstatic.com css allow
+baidu.com bdstatic.com image allow
+baidu.com bdstatic.com script allow
+baidu.com cdn.bcebos.com css allow
+baidu.com cdn.bcebos.com image allow
+baidu.com cdn.bcebos.com script allow
+baike.baidu.com baike.baidu.com * inherit
+eyun.baidu.com baidupcs.com frame allow
+eyun.baidu.com baidupcs.com other allow
+fanyi.baidu.com fanyi.baidu.com * inherit
+image.baidu.com image.baidu.com * inherit
+iqiyi.com * xhr allow
+iqiyi.com qiyi.com script allow
+iqiyi.com qiyipic.com script allow
+jingyan.baidu.com jingyan.baidu.com * inherit
+map.baidu.com map.baidu.com * inherit
+music.baidu.com music.baidu.com * inherit
+pan.baidu.com baidupcs.com frame allow
+pan.baidu.com baidupcs.com other allow
+tieba.baidu.com bdstatic.com media allow
+tieba.baidu.com tieba.baidu.com * inherit
+wangpan.baidu.com baidupcs.com frame allow
+wangpan.baidu.com baidupcs.com other allow
+wenku.baidu.com wenku.baidu.com * inherit
+www.baidu.com * cookie block
+xueshu.baidu.com xueshu.baidu.com * inherit
+yun.baidu.com baidupcs.com frame allow
+yun.baidu.com baidupcs.com other allow
+zhidao.baidu.com zhidao.baidu.com * inherit
 
 ! Alibaba Group
 ! Taobao
@@ -742,7 +740,6 @@ alipay.com taobao.com frame allow
 alipay.com taobao.com script allow
 alipay.com tbcdn.cn script allow
 ! 1688
-1688.com sec.1688.com * block
 1688.com alibaba.com cookie allow
 1688.com alibaba.com frame allow
 1688.com alibaba.com script allow
@@ -754,6 +751,7 @@ alipay.com tbcdn.cn script allow
 1688.com aliyun.com cookie allow
 1688.com aliyun.com frame allow
 1688.com aliyun.com script allow
+1688.com sec.1688.com * block
 1688.com taobao.com cookie allow
 1688.com taobao.com frame allow
 1688.com taobao.com script allow
@@ -766,10 +764,10 @@ alibaba.com alipay.com cookie allow
 alibaba.com alipay.com frame allow
 alibaba.com alipay.com script allow
 alibaba.com alipayobjects.com script allow
+alibaba.com aliunicorn.com script allow
 alibaba.com aliyun.com cookie allow
 alibaba.com aliyun.com frame allow
 alibaba.com aliyun.com script allow
-alibaba.com aliunicorn.com script allow
 alibaba.com taobao.com cookie allow
 alibaba.com taobao.com frame allow
 alibaba.com taobao.com script allow
@@ -791,35 +789,37 @@ aliexpress.com taobao.com frame allow
 aliexpress.com taobao.com script allow
 aliexpress.com tbcdn.cn script allow
 ! gaode map
-* gaode.com * block
 * amap.com * block
 * amapauto.com * block
 * anav.com * block
 * autonavi.com * block
+* gaode.com * block
 
 ! Tencent
-* qq.com * block
-* qq.com image allow
-mail.qq.com qq.com * inherit
-mp.weixin.qq.com qq.com * inherit
-ptlogin2.qq.com qq.com * inherit
-docs.qq.com qq.com * inherit
-docs.qq.com docs.idqqimg.com script allow
-v.qq.com qq.com * inherit
-y.qq.com qq.com * inherit
-* tencent.com * block
-* pcmgr-global.com * block
 * beacon.gtimg.com * block
 * lb.gtimg.com * block
-* wa.gtimg.com * block
-* wb.gtimg.com * block
+* pcmgr-global.com * block
 * pgdt.gtimg.cn * block
+* qq.com * block
+* qq.com image allow
 * soso.com * block
 * sougou.com * block
+* tencent.com * block
+* wa.gtimg.com * block
+* wb.gtimg.com * block
+aq.qq.com qq.com * inherit
+docs.qq.com docs.idqqimg.com script allow
+docs.qq.com qq.com * inherit
+mail.qq.com qq.com * inherit
+ptlogin2.qq.com qq.com * inherit
+v.qq.com qq.com * inherit
+weixin.qq.com qq.com * inherit
+wx.qq.com qq.com * inherit
+y.qq.com qq.com * inherit
 
 ! Qihoo 360
-* 360.com * block
 * 360.cn * block
+* 360.com * block
 * 360doc.com * block
 * 360safe.com * block
 * 360totalsecurity.com * block
@@ -839,16 +839,16 @@ iesdouyin.com s3.bytecdn.cn script allow
 iesdouyin.com s3.pstatp.com script allow
 
 ! JD
+baitiao.com 360buyimg.com script allow
+baitiao.com jd.com script allow
 jd.com 3.cn script allow
-jd.com ad.3.cn * block
 jd.com 360buyimg.com script allow
+jd.com ad.3.cn * block
 jd.com jd.hk script allow
 jd.hk 3.cn script allow
+jd.hk 360buyimg.com script allow
 jd.hk ad.3.cn * block
 jd.hk jd.com script allow
-jd.hk 360buyimg.com script allow
-baitiao.com jd.com script allow
-baitiao.com 360buyimg.com script allow
 
 ! Sina
 * sina.cn * block
@@ -856,47 +856,47 @@ baitiao.com 360buyimg.com script allow
 blog.sina.com.cn sina.com.cn * inherit
 blog.sina.com.cn sinaimg.cn script allow
 blog.sina.com.cn sinajs.cn script allow
-blog.sina.com.cn weibo.com script allow
 blog.sina.com.cn weibo.cn script allow
+blog.sina.com.cn weibo.com script allow
+weibo.cn sinaimg.cn script allow
+weibo.cn weibocdn.com media allow
+weibo.cn weibocdn.com xhr allow
+weibo.com sina.cn script allow
 weibo.com sina.com.cn script allow
 weibo.com sina.com.cn xhr allow
-weibo.com sina.cn script allow
-weibo.com sinaimg.cn script allow
 weibo.com sinaimg.cn other allow
+weibo.com sinaimg.cn script allow
 weibo.com sinajs.cn script allow
 weibo.com weibo.cn script allow
 weibo.com weibocdn.com media allow
 weibo.com weibocdn.com xhr allow
 weibo.com weipan.cn script allow
-weibo.cn sinaimg.cn script allow
-weibo.cn weibocdn.com media allow
-weibo.cn weibocdn.com xhr allow
 
 ! Zhihu
-zhihu.com zhimg.com script allow
 zhihu.com sugar.zhihu.com * block
 zhihu.com zhihu-web-analytics.zhihu.com * block
+zhihu.com zhimg.com script allow
 
 ! Other Technology Websites
 autodesk.com autodesk.net script allow
 autodesk.com.cn autodesk.net script allow
-zdnet.com cbsistatic.com script allow
 cnet.com cbsistatic.com script allow
-ifanr.com images.ifanr.cn script allow
-quora.com quoracdn.net script allow
 csdn.net csdnimg.cn script allow
-pcbeta.com cdn.pcbeta.static.inimc.com script allow
-itellyou.cn apps.bdimg.com script allow
 html5test.com api.whichbrowser.net script allow
+ifanr.com images.ifanr.cn script allow
+itellyou.cn apps.bdimg.com script allow
+ithome.com dyn.ithome.com frame block
+pcbeta.com cdn.pcbeta.static.inimc.com script allow
+quora.com quoracdn.net script allow
 speedtest.net b.cdnst.net script allow
 xda-developers.com xda-cdn.com script allow
-ithome.com dyn.ithome.com frame block
+zdnet.com cbsistatic.com script allow
 
 ! Adobe
-adobe.com adobedtm.com script allow
-adobe.com adobelogin.com script allow
 * typekit.com script allow
 * typekit.net script allow
+adobe.com adobedtm.com script allow
+adobe.com adobelogin.com script allow
 
 ! 卡饭论坛
 kafan.cn ikafan.com frame allow
@@ -936,14 +936,14 @@ mega.nz mega.co.nz * allow
 ! Github
 github.com ghconduit.com xhr allow
 github.com github.githubassets.com script allow
+github.com github.io * allow
+github.com github.io frame allow
+github.com github.io script allow
 github.com githubapp.com * allow
 github.com githubapp.com script allow
-github.com github.io * allow
-github.com github.io script allow
-github.com github.io frame allow
 github.com githubusercontent.com * allow
-github.com githubusercontent.com script allow
 github.com githubusercontent.com frame allow
+github.com githubusercontent.com script allow
 ! Bitbucket
 bitbucket.org atlassian.com script allow
 ! Sourceforge
@@ -963,21 +963,21 @@ airbnb.com maps.googleapis.com script allow
 imdb.com ia.media-imdb.com image allow
 
 ! Wikimedia Foundation
-wikimediafoundation.org wikimedia.org * allow
-wikipedia.org wikimedia.org * allow
-wikipedia.org wmflabs.org * allow
+mediawiki.org wikimedia.org * allow
 wikibooks.org wikimedia.org * allow
 wikidata.org wikimedia.org * allow
+wikimediafoundation.org wikimedia.org * allow
 wikinews.org wikimedia.org * allow
+wikipedia.org wikimedia.org * allow
+wikipedia.org wmflabs.org * allow
 wikiquote.org wikimedia.org * allow
 wikisource.org wikimedia.org * allow
 wikiversity.org wikimedia.org * allow
 wikivoyage.org wikimedia.org * allow
-wiktionary.org wikimedia.org * allow
 wikiwand.com wikimedia.org * allow
 wikiwand.com wikipedia.org * allow
+wiktionary.org wikimedia.org * allow
 wmflabs.org wikipedia.org * allow
-mediawiki.org wikimedia.org * allow
 
 ! Block URL shortening
 * adf.ly * block
@@ -988,8 +988,8 @@ mediawiki.org wikimedia.org * allow
 * is.gd * block
 * j.mp * block
 * jd.cn.hn * block
-* qq.cn.hn * block
 * ppt.cc * block
+* qq.cn.hn * block
 * sina.lt * block
 * t.cn * block
 * tb.cn.hn * block
@@ -1060,8 +1060,8 @@ Google's reCAPTCHA
 
 Whitlist reCAPTCHA
 	* recaptcha.net
-		_ recaptcha.net script
 		_ recaptcha.net frame
+		_ recaptcha.net script
 		_ recaptcha.net xhr
 			
 Whitelist GeeTest CAPTCHA
@@ -1080,25 +1080,25 @@ Whitelist Tencent CAPTCHA
 
 Whitelist Alibaba CAPTCHA
 	* cf.aliyun.com
-		_ cf.aliyun.com script
 		_ a.alipayobjects.com script
+		_ cf.aliyun.com script
 		
 Whitelist NetEase CAPTCHA
 	* 126.net
-		_ acstatic-dun.126.net script
-		_ cstaticdun.126.net script
 		_ ac.dun.163yun.com script
 		_ ac.dun.163yun.com xhr
+		_ acstatic-dun.126.net script
+		_ cstaticdun.126.net script
 		
 ! Whitlist 3rd Services
 Youku as 3rd Party
 	* youku.com
-		_ youku.com cookie
 		_ api.youku.com script
-		_ player.youku.com script
 		_ player.youku.com frame
+		_ player.youku.com script
 		_ static.youku.com script
 		_ ykimg.com script
+		_ youku.com cookie
 		
 Youtube as 3rd Party
 	* youtube.com
