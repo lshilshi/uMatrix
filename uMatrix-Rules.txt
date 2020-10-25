@@ -54,111 +54,111 @@ behind-the-scene cloudopt.net * block
 
 ! Global CDN rules
 ! Decentraleyes-global
-* 127.0.0.1
-	* 127.0.0.1 * allow
-* ajax.aspnetcdn.com
-	* ajax.aspnetcdn.com script allow
-	* ajax.aspnetcdn.com xhr allow
-* ajax.cloudflare.com
-	* ajax.cloudflare.com script allow
-	* ajax.cloudflare.com xhr allow
-* ajax.googleapis.com
-	* ajax.googleapis.com script allow
-	* ajax.googleapis.com xhr allow
-* ajax.microsoft.com 
-	* ajax.microsoft.com script allow
-	* ajax.microsoft.com xhr allow
-* ajax.proxy.ustclug.org 
-	* ajax.proxy.ustclug.org script allow
-	* ajax.proxy.ustclug.org xhr allow
-* akamai.net
-	* akamai.net script allow
-	* akamai.net xhr allow
-* akamaihd.net
-	* akamaihd.net script allow
-	* akamaihd.net xhr allow
-* akamaized.net
-	* akamaized.net script allow
-	* akamaized.net xhr allow		
-* apis.google.com 
-	* apis.google.com script allow
-	* apis.google.com xhr allow
-* bootstrapcdn.com
-	* bootstrapcdn.com script allow
-	* bootstrapcdn.com xhr allow
-* cdn.bootcdn.net 
-	* cdn.bootcdn.net script allow
-	* cdn.bootcdn.net xhr allow
-* cdn.bootcss.com
-	* cdn.bootcss.com script allow
-	* cdn.bootcss.com xhr allow
-* cdn.jsdelivr.net
-	* cdn.jsdelivr.net script allow
-	* cdn.jsdelivr.net xhr allow
-* cdn.mathjax.org
-	* cdn.mathjax.org script allow
-	* cdn.mathjax.org xhr allow
-* cdn.staticfile.org
-	* cdn.staticfile.org script allow
-	* cdn.staticfile.org xhr allow
-* cdnjs.cloudflare.com
-	* cdnjs.cloudflare.com script allow
-	* cdnjs.cloudflare.com xhr allow
-* cloudfront.net
-	* cloudfront.net media allow
-	* cloudfront.net script allow
-	* cloudfront.net xhr allow
-* code.jquery.com
-	* code.jquery.com script allow
-	* code.jquery.com xhr allow
-* gstatic.cn
-	* gstatic.cn script allow
-	* gstatic.cn xhr allow
-* gstatic.com
-	* gstatic.com script allow
-	* gstatic.com xhr allow
-* gtimg.cn
-	* gtimg.cn script allow
-	* gtimg.cn xhr allow
-* sinaimg.cn
-	* sinaimg.cn script allow
-	* sinaimg.cn xhr allow
-* sinajs.cn
-	* sinajs.cn script allow
-	* sinajs.cn xhr allow
-* ssl-images-amazon.com
-	* ssl-images-amazon.com image allow
-* translate.googleapis.com
-	* translate.googleapis.com * allow
+! * 127.0.0.1
+* 127.0.0.1 * allow
+! * ajax.aspnetcdn.com
+* ajax.aspnetcdn.com script allow
+* ajax.aspnetcdn.com xhr allow
+! * ajax.cloudflare.com
+* ajax.cloudflare.com script allow
+* ajax.cloudflare.com xhr allow
+! * ajax.googleapis.com
+* ajax.googleapis.com script allow
+* ajax.googleapis.com xhr allow
+! * ajax.microsoft.com 
+* ajax.microsoft.com script allow
+* ajax.microsoft.com xhr allow
+! * ajax.proxy.ustclug.org 
+* ajax.proxy.ustclug.org script allow
+* ajax.proxy.ustclug.org xhr allow
+! * akamai.net
+* akamai.net script allow
+* akamai.net xhr allow
+! * akamaihd.net
+* akamaihd.net script allow
+* akamaihd.net xhr allow
+! * akamaized.net
+* akamaized.net script allow
+* akamaized.net xhr allow		
+! * apis.google.com 
+* apis.google.com script allow
+* apis.google.com xhr allow
+! * bootstrapcdn.com
+* bootstrapcdn.com script allow
+* bootstrapcdn.com xhr allow
+! * cdn.bootcdn.net 
+* cdn.bootcdn.net script allow
+* cdn.bootcdn.net xhr allow
+! * cdn.bootcss.com
+* cdn.bootcss.com script allow
+* cdn.bootcss.com xhr allow
+! * cdn.jsdelivr.net
+* cdn.jsdelivr.net script allow
+* cdn.jsdelivr.net xhr allow
+! * cdn.mathjax.org
+* cdn.mathjax.org script allow
+* cdn.mathjax.org xhr allow
+! * cdn.staticfile.org
+* cdn.staticfile.org script allow
+* cdn.staticfile.org xhr allow
+! * cdnjs.cloudflare.com
+* cdnjs.cloudflare.com script allow
+* cdnjs.cloudflare.com xhr allow
+! * cloudfront.net
+* cloudfront.net media allow
+* cloudfront.net script allow
+* cloudfront.net xhr allow
+! * code.jquery.com
+* code.jquery.com script allow
+* code.jquery.com xhr allow
+! * gstatic.cn
+* gstatic.cn script allow
+* gstatic.cn xhr allow
+! * gstatic.com
+* gstatic.com script allow
+* gstatic.com xhr allow
+! * gtimg.cn
+* gtimg.cn script allow
+* gtimg.cn xhr allow
+! * sinaimg.cn
+* sinaimg.cn script allow
+* sinaimg.cn xhr allow
+! * sinajs.cn
+* sinajs.cn script allow
+* sinajs.cn xhr allow
+! * ssl-images-amazon.com
+* ssl-images-amazon.com image allow
+! * translate.googleapis.com
+* translate.googleapis.com * allow
 * translate.googleusercontent.com
-	* translate.googleusercontent.com * allow
-* upcdn.b0.upaiyun.com
-	* upcdn.b0.upaiyun.com script allow
-	* upcdn.b0.upaiyun.com xhr allow
-* qbox.me
-	* qbox.me script allow
-	* qbox.me xhr allow
-* yastatic.net
-	* yastatic.net script allow
-	* yastatic.net xhr allow
-* cdnjs.cat.net
-	* cdnjs.cat.net script allow
-	* cdnjs.cat.net xhr allow
-* cdnjs.loli.net
-	* cdnjs.loli.net script allow
-	* cdnjs.loli.net xhr allow
-* lib.baomitu.com
-	* lib.baomitu.com script allow
-	* lib.baomitu.com xhr allow
-* cdn.optimizely.com
-	* cdn.optimizely.com script allow
-	* cdn.optimizely.com xhr allow
-* alicdn.com
-	* alicdn.com script allow
-	* alicdn.com xhr allow
-* tbcdn.cn
-	* tbcdn.cn script allow
-	* tbcdn.cn xhr allow
+* translate.googleusercontent.com * allow
+! * upcdn.b0.upaiyun.com
+* upcdn.b0.upaiyun.com script allow
+* upcdn.b0.upaiyun.com xhr allow
+! * qbox.me
+* qbox.me script allow
+* qbox.me xhr allow
+! * yastatic.net
+* yastatic.net script allow
+* yastatic.net xhr allow
+! * cdnjs.cat.net
+* cdnjs.cat.net script allow
+* cdnjs.cat.net xhr allow
+! * cdnjs.loli.net
+* cdnjs.loli.net script allow
+* cdnjs.loli.net xhr allow
+! * lib.baomitu.com
+* lib.baomitu.com script allow
+* lib.baomitu.com xhr allow
+! * cdn.optimizely.com
+* cdn.optimizely.com script allow
+* cdn.optimizely.com xhr allow
+! * alicdn.com
+* alicdn.com script allow
+* alicdn.com xhr allow
+! * tbcdn.cn
+* tbcdn.cn script allow
+* tbcdn.cn xhr allow
 
 ! Whitlist 1st Services
 ! Google
@@ -347,9 +347,10 @@ pptv.com pplive.cn script allow
 ! sohu tv
 * sohu.com * block
 * sohucs.com * block
+sohu.com itc.cn script allow
 tv.sohu.com cdn.sohucs.com script allow
 tv.sohu.com js.tv.itc.cn script allow
-tv.sohu.com sohu.com * inherit
+tv.sohu.com sohu.com * allow
 ! CCAV
 tv.cctv.com cctvpic.com script allow
 tv.cctv.com cntv.cn script allow
@@ -372,9 +373,9 @@ ximalaya.com xmcdn.com script allow
 * 163.com * block
 * youdao.com * block
 blog.163.com 126.net css allow
-blog.163.com 163.com * inherit
-music.163.com 126.net * inherit
-music.163.com 163.com * inherit
+blog.163.com 163.com * allow
+music.163.com 126.net * allow
+music.163.com 163.com * allow
 music.163.com music.126.net script allow
 music.163.com netease.com script allow
 
@@ -668,29 +669,29 @@ baidu.com bdstatic.com script allow
 baidu.com cdn.bcebos.com css allow
 baidu.com cdn.bcebos.com image allow
 baidu.com cdn.bcebos.com script allow
-baike.baidu.com baidu.com * inherit
+baike.baidu.com baidu.com * allow
 eyun.baidu.com baidupcs.com frame allow
 eyun.baidu.com baidupcs.com other allow
-fanyi.baidu.com baidu.com * inherit
-image.baidu.com baidu.com * inherit
+fanyi.baidu.com baidu.com * allow
+image.baidu.com baidu.com * allow
 iqiyi.com * xhr allow
 iqiyi.com qiyi.com script allow
 iqiyi.com qiyipic.com script allow
-jingyan.baidu.com baidu.com * inherit
-map.baidu.com baidu.com * inherit
-music.baidu.com baidu.com * inherit
+jingyan.baidu.com baidu.com * allow
+map.baidu.com baidu.com * allow
+music.baidu.com baidu.com * allow
 pan.baidu.com baidupcs.com frame allow
 pan.baidu.com baidupcs.com other allow
 tieba.baidu.com bdstatic.com media allow
-tieba.baidu.com baidu.com * inherit
+tieba.baidu.com baidu.com * allow
 wangpan.baidu.com baidupcs.com frame allow
 wangpan.baidu.com baidupcs.com other allow
-wenku.baidu.com baidu.com * inherit
+wenku.baidu.com baidu.com * allow
 www.baidu.com * cookie block
-xueshu.baidu.com baidu.com * inherit
+xueshu.baidu.com baidu.com * allow
 yun.baidu.com baidupcs.com frame allow
 yun.baidu.com baidupcs.com other allow
-zhidao.baidu.com baidu.com * inherit
+zhidao.baidu.com baidu.com * allow
 
 ! Alibaba Group
 ! Taobao
@@ -789,7 +790,7 @@ aliexpress.com taobao.com script allow
 aliexpress.com tbcdn.cn script allow
 ! gaode map
 * amap.com * block
-amap.com amap.com * inherit
+amap.com amap.com * allow
 * amapauto.com * block
 * anav.com * block
 * autonavi.com * block
@@ -801,29 +802,21 @@ amap.com amap.com * inherit
 * pcmgr-global.com * block
 * pgdt.gtimg.cn * block
 * qq.com * block
-qq.com qq.com * inherit
+qq.com qq.com * allow
 * qq.com image allow
 * soso.com * block
 * sougou.com * block
 * tencent.com * block
-tencent.com tencent.com * inherit
+tencent.com tencent.com * allow
 * wa.gtimg.com * block
 * wb.gtimg.com * block
-aq.qq.com qq.com * inherit
 docs.qq.com docs.idqqimg.com script allow
-docs.qq.com qq.com * inherit
-mail.qq.com qq.com * inherit
-ptlogin2.qq.com qq.com * inherit
-v.qq.com qq.com * inherit
-weixin.qq.com qq.com * inherit
-wx.qq.com qq.com * inherit
-y.qq.com qq.com * inherit
 
 ! Qihoo 360
 * 360.cn * block
 * 360.com * block
 * 360doc.com * block
- 360doc.com 360doc.com * inherit
+ 360doc.com 360doc.com * allow
 * 360safe.com * block
 * 360totalsecurity.com * block
 * haosou.com * block
@@ -855,10 +848,9 @@ jd.hk jd.com script allow
 
 ! Sina
 * sina.cn * block
-sina.cn sina.cn * inherit
+sina.cn sina.cn * allow
 * sina.com.cn * block
-sina.com.cn sina.com.cn * inherit
-blog.sina.com.cn sina.com.cn * inherit
+sina.com.cn sina.com.cn * allow
 blog.sina.com.cn sinaimg.cn script allow
 blog.sina.com.cn sinajs.cn script allow
 blog.sina.com.cn weibo.cn script allow
