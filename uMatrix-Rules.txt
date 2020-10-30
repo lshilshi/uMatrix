@@ -373,9 +373,9 @@ ximalaya.com xmcdn.com script allow
 * 163.com * block
 * youdao.com * block
 blog.163.com 126.net css allow
-blog.163.com 163.com * allow
+blog.163.com blog.163.com * allow
 music.163.com 126.net * allow
-music.163.com 163.com * allow
+music.163.com music.163.com * allow
 music.163.com music.126.net script allow
 music.163.com netease.com script allow
 
@@ -669,29 +669,29 @@ baidu.com bdstatic.com script allow
 baidu.com cdn.bcebos.com css allow
 baidu.com cdn.bcebos.com image allow
 baidu.com cdn.bcebos.com script allow
-baike.baidu.com baidu.com * allow
+baike.baidu.com baike.baidu.com * allow
 eyun.baidu.com baidupcs.com frame allow
 eyun.baidu.com baidupcs.com other allow
-fanyi.baidu.com baidu.com * allow
-image.baidu.com baidu.com * allow
+fanyi.baidu.com fanyi.baidu.com * allow
+image.baidu.com image.baidu.com * allow
 iqiyi.com * xhr allow
 iqiyi.com qiyi.com script allow
 iqiyi.com qiyipic.com script allow
-jingyan.baidu.com baidu.com * allow
-map.baidu.com baidu.com * allow
-music.baidu.com baidu.com * allow
+jingyan.baidu.com jingyan.baidu.com * allow
+map.baidu.com map.baidu.com * allow
+music.baidu.com music.baidu.com * allow
 pan.baidu.com baidupcs.com frame allow
 pan.baidu.com baidupcs.com other allow
 tieba.baidu.com bdstatic.com media allow
-tieba.baidu.com baidu.com * allow
+tieba.baidu.com tieba.baidu.com * allow
 wangpan.baidu.com baidupcs.com frame allow
 wangpan.baidu.com baidupcs.com other allow
-wenku.baidu.com baidu.com * allow
+wenku.baidu.com wenku.baidu.com * allow
 www.baidu.com * cookie block
-xueshu.baidu.com baidu.com * allow
+xueshu.baidu.com xueshu.baidu.com * allow
 yun.baidu.com baidupcs.com frame allow
 yun.baidu.com baidupcs.com other allow
-zhidao.baidu.com baidu.com * allow
+zhidao.baidu.com zhidao.baidu.com * allow
 
 ! Alibaba Group
 ! Taobao
