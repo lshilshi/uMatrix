@@ -44,13 +44,10 @@ behind-the-scene cloudopt.net * block
 * * doc inherit
 * * frame block
 * * image allow
-* * media allow
 * * xhr allow
 * 1st-party * allow
 * 1st-party cookie allow
 * 1st-party frame allow
-* 1st-party other allow
-* 1st-party script allow
 
 ! Global CDN rules
 ! Decentraleyes-global
@@ -1017,8 +1014,8 @@ Whitelist Baidu Developer Center
 		_ apps.bdimg.com script
 		_ apps.bdimg.com xhr
 	* libs.baidu.com
-		_ libs.baidu.com script allow
-		_ libs.baidu.com xhr allow
+		_ libs.baidu.com script
+		_ libs.baidu.com xhr
 
 Whitelist Sina CDN
 	* lib.sinaapp.com
@@ -1106,5 +1103,5 @@ Youtube as 3rd Party
 
 Wikimedia websites, non-global
 	* wikimedia.org
-		_ wikimedia.org image allow
-		_ wikimedia.org media allow
+		_ wikimedia.org image
+		_ wikimedia.org media
